@@ -33,6 +33,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.dragon_of_berk.init.DragonOfBerkModItems;
 import net.mcreator.dragon_of_berk.init.DragonOfBerkModEntities;
+import net.mcreator.dragon_of_berk.init.DragonOfBerkModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -52,6 +53,7 @@ public class DragonOfBerkMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
+		DragonOfBerkModBlocks.REGISTRY.register(bus);
 		DragonOfBerkModItems.REGISTRY.register(bus);
 		DragonOfBerkModEntities.REGISTRY.register(bus);
 

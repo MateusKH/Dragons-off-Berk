@@ -1,4 +1,12 @@
 {
+  "block.dragon_of_berk.gronkel_iron_block": "Block of GronkelIron",
+  "item.dragon_of_berk.gronkelmagmashovel": "Gronkelmagmashovel",
   "entity.dragon_of_berk.papa_tudo": "Papa Tudo",
-  "item.dragon_of_berk.papa_tudo_spawn_egg": "Papa Tudo Spawn Egg"
+  "item.dragon_of_berk.gronkelironmix": "Gronkelironmix",
+  "block.dragon_of_berk.liquidgronkeliron": "Liquid Gronkel Iron",
+  "item.dragon_of_berk.gronkel_spawn_egg": "Gronkel Spawn Egg",
+  "item.dragon_of_berk.papa_tudo_spawn_egg": "Papa Tudo Spawn Egg",
+  "item.dragon_of_berk.gronkel_iron": "GronkelIron",
+  "block.dragon_of_berk.gronkelmagma": "Gronkel Magma",
+  "entity.dragon_of_berk.gronkel": "Gronkel"
 }

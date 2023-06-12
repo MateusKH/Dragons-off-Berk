@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.dragon_of_berk.entity.PapaTudoEntity;
+import net.mcreator.dragon_of_berk.entity.GronkelEntity;
 import net.mcreator.dragon_of_berk.DragonOfBerkMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -26,6 +27,10 @@ public class DragonOfBerkModEntities {
 			EntityType.Builder.<PapaTudoEntity>of(PapaTudoEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(20).setUpdateInterval(3).setCustomClientFactory(PapaTudoEntity::new)
 
 					.sized(0.6f, 0.6f));
+	public static final RegistryObject<EntityType<GronkelEntity>> GRONKEL = register("gronkel",
+			EntityType.Builder.<GronkelEntity>of(GronkelEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GronkelEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -35,11 +40,13 @@ public class DragonOfBerkModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			PapaTudoEntity.init();
+			GronkelEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(PAPA_TUDO.get(), PapaTudoEntity.createAttributes().build());
+		event.put(GRONKEL.get(), GronkelEntity.createAttributes().build());
 	}
 }

@@ -10,11 +10,13 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.dragon_of_berk.client.renderer.PapaTudoRenderer;
+import net.mcreator.dragon_of_berk.client.renderer.GronkelRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class DragonOfBerkModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(DragonOfBerkModEntities.PAPA_TUDO.get(), PapaTudoRenderer::new);
+		event.registerEntityRenderer(DragonOfBerkModEntities.GRONKEL.get(), GronkelRenderer::new);
 	}
 }

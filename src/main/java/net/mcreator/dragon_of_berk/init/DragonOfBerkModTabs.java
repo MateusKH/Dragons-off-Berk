@@ -17,6 +17,7 @@ public class DragonOfBerkModTabs {
 
 		if (tabData.getTab() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(DragonOfBerkModItems.PAPA_TUDO_SPAWN_EGG.get());
+			tabData.accept(DragonOfBerkModItems.GRONKEL_SPAWN_EGG.get());
 		}
 	}
 }

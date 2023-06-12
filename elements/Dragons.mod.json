@@ -1,0 +1,21 @@
+{
+  "_fv": 43,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:PapaTudo"
+      },
+      {
+        "value": "CUSTOM:Gronkel"
+      }
+    ],
+    "biomes": [],
+    "name": "dragons",
+    "namespace": "forge"
+  }
+}
