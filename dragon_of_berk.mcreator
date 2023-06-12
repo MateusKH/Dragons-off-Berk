@@ -14,7 +14,8 @@
           "src/main/resources/assets/dragon_of_berk/models/item/papa_tudo_spawn_egg.json",
           "src/main/java/net/mcreator/dragon_of_berk/entity/PapaTudoEntity.java"
         ]
-      }
+      },
+      "path": "~/basik"
     }
   ],
   "variable_elements": [],
@@ -27,7 +28,12 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "basik",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "dragon_of_berk",
