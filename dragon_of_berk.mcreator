@@ -1,0 +1,54 @@
+{
+  "mod_elements": [
+    {
+      "name": "PapaTudo",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "papa_tudo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/entity/model/PapaTudoModel.java",
+          "src/main/resources/data/dragon_of_berk/forge/biome_modifier/papa_tudo_biome_modifier.json",
+          "src/main/java/net/mcreator/dragon_of_berk/client/renderer/PapaTudoRenderer.java",
+          "src/main/resources/assets/dragon_of_berk/models/item/papa_tudo_spawn_egg.json",
+          "src/main/java/net/mcreator/dragon_of_berk/entity/PapaTudoEntity.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "entity.dragon_of_berk.papa_tudo": "Papa Tudo",
+      "item.dragon_of_berk.papa_tudo_spawn_egg": "Papa Tudo Spawn Egg"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "dragon_of_berk",
+    "modName": "Dragon of Berk",
+    "version": "1.0.0",
+    "author": "Mateus Kunz Hippler, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": false,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "curios_api",
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.19.4",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.dragon_of_berk",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300223515
+}

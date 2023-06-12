@@ -11,7 +11,7 @@
  *    will be REGENERATED on each build.
  *
  */
-package net.mcreator.remotetest;
+package net.mcreator.dragon_of_berk;
 
 import software.bernie.geckolib.GeckoLib;
 
@@ -31,6 +31,9 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.dragon_of_berk.init.DragonOfBerkModItems;
+import net.mcreator.dragon_of_berk.init.DragonOfBerkModEntities;
+
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
@@ -40,14 +43,17 @@ import java.util.Collection;
 import java.util.ArrayList;
 import java.util.AbstractMap;
 
-@Mod("remote_test")
-public class RemoteTestMod {
-	public static final Logger LOGGER = LogManager.getLogger(RemoteTestMod.class);
-	public static final String MODID = "remote_test";
+@Mod("dragon_of_berk")
+public class DragonOfBerkMod {
+	public static final Logger LOGGER = LogManager.getLogger(DragonOfBerkMod.class);
+	public static final String MODID = "dragon_of_berk";
 
-	public RemoteTestMod() {
+	public DragonOfBerkMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		DragonOfBerkModItems.REGISTRY.register(bus);
+		DragonOfBerkModEntities.REGISTRY.register(bus);
 
 		GeckoLib.initialize();
 	}
