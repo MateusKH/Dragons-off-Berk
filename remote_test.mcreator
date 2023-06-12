@@ -11,7 +11,7 @@
   },
   "workspaceSettings": {
     "modid": "remote_test",
-    "modName": "Remote test",
+    "modName": "Dragon of Berk",
     "version": "1.0.0",
     "author": "Mateus Kunz Hippler, MCreator",
     "websiteURL": "https://mcreator.net",
@@ -21,7 +21,10 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "curios_api",
+      "geckolib"
+    ],
     "currentGenerator": "forge-1.19.4",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.remotetest",
