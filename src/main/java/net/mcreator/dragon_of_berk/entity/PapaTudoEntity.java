@@ -14,23 +14,10 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
 
-import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.Heightmap;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.monster.Creeper;
-import net.minecraft.world.entity.animal.Animal;
-import net.minecraft.world.entity.ai.navigation.PathNavigation;
-import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
-import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
-import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
-import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
-import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.world.entity.ai.goal.Goal;
-import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
-import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
@@ -43,7 +30,6 @@ import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.Difficulty;
-import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.syncher.SynchedEntityData;
@@ -51,11 +37,8 @@ import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
-import net.minecraft.core.BlockPos;
 
 import net.mcreator.dragon_of_berk.init.DragonOfBerkModEntities;
-
-import java.util.EnumSet;
 
 public class PapaTudoEntity extends Monster implements GeoEntity {
 	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(PapaTudoEntity.class, EntityDataSerializers.BOOLEAN);
@@ -75,7 +58,6 @@ public class PapaTudoEntity extends Monster implements GeoEntity {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
-		this.moveControl = new FlyingMoveControl(this, 10, true);
 	}
 
 	@Override
@@ -100,71 +82,12 @@ public class PapaTudoEntity extends Monster implements GeoEntity {
 	}
 
 	@Override
-	protected PathNavigation createNavigation(Level world) {
-		return new FlyingPathNavigation(this, world);
-	}
-
-	@Override
 	protected void registerGoals() {
 		super.registerGoals();
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return 1;
-			}
-		});
-		this.goalSelector.addGoal(2, new Goal() {
-			{
-				this.setFlags(EnumSet.of(Goal.Flag.MOVE));
-			}
-
-			public boolean canUse() {
-				if (PapaTudoEntity.this.getTarget() != null && !PapaTudoEntity.this.getMoveControl().hasWanted()) {
-					return true;
-				} else {
-					return false;
-				}
-			}
-
-			@Override
-			public boolean canContinueToUse() {
-				return PapaTudoEntity.this.getMoveControl().hasWanted() && PapaTudoEntity.this.getTarget() != null && PapaTudoEntity.this.getTarget().isAlive();
-			}
-
-			@Override
-			public void start() {
-				LivingEntity livingentity = PapaTudoEntity.this.getTarget();
-				Vec3 vec3d = livingentity.getEyePosition(1);
-				PapaTudoEntity.this.moveControl.setWantedPosition(vec3d.x, vec3d.y, vec3d.z, 1);
-			}
-
-			@Override
-			public void tick() {
-				LivingEntity livingentity = PapaTudoEntity.this.getTarget();
-				if (PapaTudoEntity.this.getBoundingBox().intersects(livingentity.getBoundingBox())) {
-					PapaTudoEntity.this.doHurtTarget(livingentity);
-				} else {
-					double d0 = PapaTudoEntity.this.distanceToSqr(livingentity);
-					if (d0 < 16) {
-						Vec3 vec3d = livingentity.getEyePosition(1);
-						PapaTudoEntity.this.moveControl.setWantedPosition(vec3d.x, vec3d.y, vec3d.z, 1);
-					}
-				}
-			}
-		});
-		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.5));
-		this.goalSelector.addGoal(4, new AvoidEntityGoal<>(this, Creeper.class, (float) 10, 1, 1.2));
-		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
-		this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, Animal.class, false, true));
-		this.targetSelector.addGoal(7, new HurtByTargetGoal(this).setAlertOthers());
-		this.goalSelector.addGoal(8, new RandomStrollGoal(this, 0.8, 20) {
-			@Override
-			protected Vec3 getPosition() {
-				RandomSource random = PapaTudoEntity.this.getRandom();
-				double dir_x = PapaTudoEntity.this.getX() + ((random.nextFloat() * 2 - 1) * 16);
-				double dir_y = PapaTudoEntity.this.getY() + ((random.nextFloat() * 2 - 1) * 16);
-				double dir_z = PapaTudoEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);
-				return new Vec3(dir_x, dir_y, dir_z);
 			}
 		});
 	}
@@ -185,11 +108,6 @@ public class PapaTudoEntity extends Monster implements GeoEntity {
 	}
 
 	@Override
-	public boolean causeFallDamage(float l, float d, DamageSource source) {
-		return false;
-	}
-
-	@Override
 	public void baseTick() {
 		super.baseTick();
 		this.refreshDimensions();
@@ -198,20 +116,6 @@ public class PapaTudoEntity extends Monster implements GeoEntity {
 	@Override
 	public EntityDimensions getDimensions(Pose p_33597_) {
 		return super.getDimensions(p_33597_).scale((float) 1);
-	}
-
-	@Override
-	protected void checkFallDamage(double y, boolean onGroundIn, BlockState state, BlockPos pos) {
-	}
-
-	@Override
-	public void setNoGravity(boolean ignored) {
-		super.setNoGravity(true);
-	}
-
-	public void aiStep() {
-		super.aiStep();
-		this.setNoGravity(true);
 	}
 
 	public static void init() {
@@ -227,7 +131,6 @@ public class PapaTudoEntity extends Monster implements GeoEntity {
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 5);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 1);
-		builder = builder.add(Attributes.FLYING_SPEED, 0.3);
 		return builder;
 	}
 
