@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "dragon_of_berk:block/fish_block_up",
-    "up": "dragon_of_berk:block/fish_block_up",
-    "north": "dragon_of_berk:block/fish_block",
-    "east": "dragon_of_berk:block/fish_block",
-    "south": "dragon_of_berk:block/fish_block",
-    "west": "dragon_of_berk:block/fish_block",
-    "particle": "dragon_of_berk:block/fish_block_up"
+    "down": "dragon_of_berk:blocks/fish_block_up",
+    "up": "dragon_of_berk:blocks/fish_block_up",
+    "north": "dragon_of_berk:blocks/fish_block",
+    "east": "dragon_of_berk:blocks/fish_block",
+    "south": "dragon_of_berk:blocks/fish_block",
+    "west": "dragon_of_berk:blocks/fish_block",
+    "particle": "dragon_of_berk:blocks/fish_block_up"
   },
   "render_type": "solid"
 }

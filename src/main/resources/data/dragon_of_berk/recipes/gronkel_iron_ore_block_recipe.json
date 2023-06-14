@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
   "pattern": [
     "012",
     "345",
@@ -8,35 +7,35 @@
   ],
   "key": {
     "0": {
-      "item": "dragon_of_berk:deleted_mod_element"
+      "item": "dragon_of_berk:gronkel_iron"
     },
     "1": {
-      "item": "dragon_of_berk:deleted_mod_element"
+      "item": "dragon_of_berk:gronkel_iron"
     },
     "2": {
-      "item": "dragon_of_berk:deleted_mod_element"
+      "item": "dragon_of_berk:gronkel_iron"
     },
     "3": {
-      "item": "dragon_of_berk:deleted_mod_element"
+      "item": "dragon_of_berk:gronkel_iron"
     },
     "4": {
-      "item": "dragon_of_berk:deleted_mod_element"
+      "item": "dragon_of_berk:gronkel_iron"
     },
     "5": {
-      "item": "dragon_of_berk:deleted_mod_element"
+      "item": "dragon_of_berk:gronkel_iron"
     },
     "6": {
-      "item": "dragon_of_berk:deleted_mod_element"
+      "item": "dragon_of_berk:gronkel_iron"
     },
     "7": {
-      "item": "dragon_of_berk:deleted_mod_element"
+      "item": "dragon_of_berk:gronkel_iron"
     },
     "8": {
-      "item": "dragon_of_berk:deleted_mod_element"
+      "item": "dragon_of_berk:gronkel_iron"
     }
   },
   "result": {
-    "item": "dragon_of_berk:deleted_mod_element",
+    "item": "dragon_of_berk:gronkel_iron_block",
     "count": 1
   }
 }

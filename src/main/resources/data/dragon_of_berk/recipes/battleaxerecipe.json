@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "pattern": [
     " 12",
     " 45",
@@ -8,23 +7,23 @@
   ],
   "key": {
     "1": {
-      "item": "dragon_of_berk:deleted_mod_element"
+      "item": "dragon_of_berk:gronkel_iron"
     },
     "2": {
-      "item": "dragon_of_berk:deleted_mod_element"
+      "item": "dragon_of_berk:gronkel_iron"
     },
     "4": {
       "item": "minecraft:stick"
     },
     "5": {
-      "item": "dragon_of_berk:deleted_mod_element"
+      "item": "dragon_of_berk:gronkel_iron"
     },
     "6": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "dragon_of_berk:deleted_mod_element",
+    "item": "dragon_of_berk:battleaxe",
     "count": 1
   }
 }

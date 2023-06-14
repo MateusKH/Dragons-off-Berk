@@ -4,57 +4,59 @@
  */
 package net.mcreator.dragon_of_berk.init;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.CreativeModeTabEvent;
-
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.CreativeModeTab;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DragonOfBerkModTabs {
-	@SubscribeEvent
-	public static void buildTabContentsVanilla(CreativeModeTabEvent.BuildContents tabData) {
+	public static CreativeModeTab TAB_DRAGONSOFBERKDRAGONS;
+	public static CreativeModeTab TAB_DRAGONSOFBERKTOOLS;
+	public static CreativeModeTab TAB_DRAGONOFBERKITENS;
+	public static CreativeModeTab TAB_DRAGONSOFBERKBLOCKS;
 
-		if (tabData.getTab() == CreativeModeTabs.SPAWN_EGGS) {
-			tabData.accept(DragonOfBerkModItems.PAPA_TUDO_SPAWN_EGG.get());
-		}
-	}
+	public static void load() {
+		TAB_DRAGONSOFBERKDRAGONS = new CreativeModeTab("tabdragonsofberkdragons") {
+			@Override
+			public ItemStack makeIcon() {
+				return new ItemStack(DragonOfBerkModItems.PAPA_TUDO_SPAWN_EGG.get());
+			}
 
-	@SubscribeEvent
-	public static void buildTabContentsModded(CreativeModeTabEvent.Register event) {
-		event.registerCreativeModeTab(new ResourceLocation("dragon_of_berk", "dragonsofberkblocks"),
-				builder -> builder.title(Component.translatable("item_group.dragon_of_berk.dragonsofberkblocks")).icon(() -> new ItemStack(DragonOfBerkModBlocks.LIQUIDGRONKELIRON.get())).displayItems((parameters, tabData) -> {
-					tabData.accept(DragonOfBerkModBlocks.GRONKEL_IRON_BLOCK.get().asItem());
-					tabData.accept(DragonOfBerkModBlocks.GRONKELMAGMA.get().asItem());
-					tabData.accept(DragonOfBerkModBlocks.LIQUIDGRONKELIRON.get().asItem());
-					tabData.accept(DragonOfBerkModBlocks.FISHBLOCK.get().asItem());
-				})
+			@Override
+			public boolean hasSearchBar() {
+				return false;
+			}
+		};
+		TAB_DRAGONSOFBERKTOOLS = new CreativeModeTab("tabdragonsofberktools") {
+			@Override
+			public ItemStack makeIcon() {
+				return new ItemStack(DragonOfBerkModItems.MACE.get());
+			}
 
-		);
-		event.registerCreativeModeTab(new ResourceLocation("dragon_of_berk", "dragonsofberktools"),
-				builder -> builder.title(Component.translatable("item_group.dragon_of_berk.dragonsofberktools")).icon(() -> new ItemStack(DragonOfBerkModItems.MACE.get())).displayItems((parameters, tabData) -> {
-					tabData.accept(DragonOfBerkModItems.MACE.get());
-					tabData.accept(DragonOfBerkModItems.BATTLEAXE.get());
-				})
+			@Override
+			public boolean hasSearchBar() {
+				return false;
+			}
+		};
+		TAB_DRAGONOFBERKITENS = new CreativeModeTab("tabdragonofberkitens") {
+			@Override
+			public ItemStack makeIcon() {
+				return new ItemStack(DragonOfBerkModItems.GRONKELIRONMIX.get());
+			}
 
-		);
-		event.registerCreativeModeTab(new ResourceLocation("dragon_of_berk", "dragonofberkitens"),
-				builder -> builder.title(Component.translatable("item_group.dragon_of_berk.dragonofberkitens")).icon(() -> new ItemStack(DragonOfBerkModItems.GRONKELIRONMIX.get())).displayItems((parameters, tabData) -> {
-					tabData.accept(DragonOfBerkModItems.GRONKEL_IRON.get());
-					tabData.accept(DragonOfBerkModItems.GRONKELIRONMIX.get());
-					tabData.accept(DragonOfBerkModItems.GRONKELMAGMASHOVEL.get());
-					tabData.accept(DragonOfBerkModItems.GRONKELIRONNUGGET.get());
-				})
+			@Override
+			public boolean hasSearchBar() {
+				return false;
+			}
+		};
+		TAB_DRAGONSOFBERKBLOCKS = new CreativeModeTab("tabdragonsofberkblocks") {
+			@Override
+			public ItemStack makeIcon() {
+				return new ItemStack(DragonOfBerkModBlocks.LIQUIDGRONKELIRON.get());
+			}
 
-		);
-		event.registerCreativeModeTab(new ResourceLocation("dragon_of_berk", "dragonsofberkdragons"),
-				builder -> builder.title(Component.translatable("item_group.dragon_of_berk.dragonsofberkdragons")).icon(() -> new ItemStack(DragonOfBerkModItems.PAPA_TUDO_SPAWN_EGG.get())).displayItems((parameters, tabData) -> {
-					tabData.accept(DragonOfBerkModItems.GRONKEL_SPAWN_EGG.get());
-				})
-
-		);
+			@Override
+			public boolean hasSearchBar() {
+				return false;
+			}
+		};
 	}
 }

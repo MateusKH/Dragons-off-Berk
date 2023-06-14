@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "dragon_of_berk:item/gronkel_iron_ingot"
+    "layer0": "dragon_of_berk:items/gronkel_iron_ingot"
   }
 }

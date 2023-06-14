@@ -1,7 +1,7 @@
 {
   "parent": "dragon_of_berk:custom/macazinha",
   "textures": {
-    "0": "dragon_of_berk:block/texture_macazinha",
-    "particle": "dragon_of_berk:item/texture_macazinha"
+    "0": "dragon_of_berk:blocks/texture_macazinha",
+    "particle": "dragon_of_berk:items/texture_macazinha"
   }
 }

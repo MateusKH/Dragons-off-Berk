@@ -13,7 +13,7 @@
  */
 package net.mcreator.dragon_of_berk;
 
-import software.bernie.geckolib.GeckoLib;
+import software.bernie.geckolib3.GeckoLib;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
@@ -31,6 +31,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.dragon_of_berk.init.DragonOfBerkModTabs;
 import net.mcreator.dragon_of_berk.init.DragonOfBerkModItems;
 import net.mcreator.dragon_of_berk.init.DragonOfBerkModEntities;
 import net.mcreator.dragon_of_berk.init.DragonOfBerkModBlocks;
@@ -51,6 +52,7 @@ public class DragonOfBerkMod {
 
 	public DragonOfBerkMod() {
 		MinecraftForge.EVENT_BUS.register(this);
+		DragonOfBerkModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		DragonOfBerkModBlocks.REGISTRY.register(bus);

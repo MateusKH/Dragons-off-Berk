@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "pattern": [
     "012",
     " 4 ",
@@ -8,13 +7,13 @@
   ],
   "key": {
     "0": {
-      "item": "dragon_of_berk:deleted_mod_element"
+      "item": "dragon_of_berk:gronkelironnugget"
     },
     "1": {
-      "item": "dragon_of_berk:deleted_mod_element"
+      "item": "dragon_of_berk:gronkel_iron"
     },
     "2": {
-      "item": "dragon_of_berk:deleted_mod_element"
+      "item": "dragon_of_berk:gronkelironnugget"
     },
     "4": {
       "item": "minecraft:stick"
@@ -24,7 +23,7 @@
     }
   },
   "result": {
-    "item": "dragon_of_berk:deleted_mod_element",
+    "item": "dragon_of_berk:mace",
     "count": 1
   }
 }

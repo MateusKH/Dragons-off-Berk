@@ -1,9 +1,9 @@
 {
   "parent": "dragon_of_berk:custom/gronkelmagma_-_copia",
   "textures": {
-    "all": "dragon_of_berk:block/gronkelmagma",
-    "particle": "dragon_of_berk:block/gronkelmagma",
-    "1": "dragon_of_berk:block/gronkelmagma"
+    "all": "dragon_of_berk:blocks/gronkelmagma",
+    "particle": "dragon_of_berk:blocks/gronkelmagma",
+    "1": "dragon_of_berk:blocks/gronkelmagma"
   },
   "render_type": "solid"
 }
