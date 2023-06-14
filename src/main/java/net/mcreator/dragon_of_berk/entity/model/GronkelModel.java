@@ -1,12 +1,8 @@
 package net.mcreator.dragon_of_berk.entity.model;
 
-import software.bernie.geckolib3.model.AnimatedGeoModel;
+import software.bernie.geckolib.core.animation.AnimationState;
 
-import net.minecraft.resources.ResourceLocation;
-
-import net.mcreator.dragon_of_berk.entity.GronkelEntity;
-
-public class GronkelModel extends AnimatedGeoModel<GronkelEntity> {
+public class GronkelModel extends GeoModel<GronkelEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(GronkelEntity entity) {
 		return new ResourceLocation("dragon_of_berk", "animations/gronkel.animation.json");

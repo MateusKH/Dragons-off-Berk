@@ -15,65 +15,103 @@
           "src/main/java/net/mcreator/dragon_of_berk/client/renderer/PapaTudoRenderer.java",
           "src/main/java/net/mcreator/dragon_of_berk/entity/PapaTudoEntity.java"
         ]
-      },
-      "path": "~/Dragons"
+      }
     },
     {
-      "name": "GronkelIron",
-      "type": "item",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronkel_iron",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/dragon_of_berk/models/item/gronkel_iron.json",
-          "src/main/java/net/mcreator/dragon_of_berk/item/GronkelIronItem.java"
-        ]
-      },
-      "path": "~/Itens"
-    },
-    {
-      "name": "GronkelIronBlock",
-      "type": "block",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronkel_iron_block",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/dragon_of_berk/blockstates/gronkel_iron_block.json",
-          "src/main/java/net/mcreator/dragon_of_berk/block/GronkelIronBlockBlock.java",
-          "src/main/resources/assets/dragon_of_berk/models/block/gronkel_iron_block.json",
-          "src/main/resources/assets/dragon_of_berk/models/item/gronkel_iron_block.json"
-        ]
-      },
-      "path": "~/Itens/Block"
-    },
-    {
-      "name": "GronkelIronOreBlockRecipe",
+      "name": "Battleaxerecipe",
       "type": "recipe",
-      "sortid": 2,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "gronkel_iron_ore_block_recipe",
+      "registry_name": "battleaxerecipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/dragon_of_berk/recipes/gronkel_iron_ore_block_recipe.json"
+          "src/main/resources/data/dragon_of_berk/recipes/battleaxerecipe.json"
         ]
       },
       "path": "~/Recipe"
     },
     {
-      "name": "GronkelIronBlockOreRecipe",
-      "type": "recipe",
-      "sortid": 1,
+      "name": "Liquidgronkeliron",
+      "type": "block",
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "gronkel_iron_block_ore_recipe",
+      "registry_name": "liquidgronkeliron",
       "metadata": {
         "files": [
-          "src/main/resources/data/dragon_of_berk/recipes/gronkel_iron_block_ore_recipe.json"
+          "src/main/resources/assets/dragon_of_berk/blockstates/liquidgronkeliron.json",
+          "src/main/java/net/mcreator/dragon_of_berk/block/LiquidgronkelironBlock.java",
+          "src/main/resources/assets/dragon_of_berk/models/item/liquidgronkeliron.json",
+          "src/main/resources/assets/dragon_of_berk/models/block/liquidgronkeliron.json"
+        ]
+      },
+      "path": "~/Itens/Block"
+    },
+    {
+      "name": "Dragonsofberkblocks",
+      "type": "tab",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragonsofberkblocks",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Macerecipe",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "macerecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dragon_of_berk/recipes/macerecipe.json"
+        ]
+      },
+      "path": "~/Recipe"
+    },
+    {
+      "name": "Gronkelironnuggetrecipe3",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronkelironnuggetrecipe_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dragon_of_berk/recipes/gronkelironnuggetrecipe_3.json"
+        ]
+      },
+      "path": "~/Recipe"
+    },
+    {
+      "name": "Gronkelironnugget",
+      "type": "item",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronkelironnugget",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/item/GronkelironnuggetItem.java",
+          "src/main/resources/assets/dragon_of_berk/models/item/gronkelironnugget.json"
+        ]
+      },
+      "path": "~/Recipe"
+    },
+    {
+      "name": "Gronkelironnuggetrecipe2",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronkelironnuggetrecipe_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dragon_of_berk/recipes/gronkelironnuggetrecipe_2.json"
         ]
       },
       "path": "~/Recipe"
@@ -93,36 +131,78 @@
       "path": "~/Tags"
     },
     {
-      "name": "Gronkelmagma",
-      "type": "block",
-      "sortid": 8,
+      "name": "Dragonsofberktools",
+      "type": "tab",
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "gronkelmagma",
+      "registry_name": "dragonsofberktools",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Gronkel",
+      "type": "animatedentity",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronkel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/dragon_of_berk/models/block/gronkelmagma.json",
-          "src/main/resources/assets/dragon_of_berk/blockstates/gronkelmagma.json",
-          "src/main/java/net/mcreator/dragon_of_berk/block/GronkelmagmaBlock.java",
-          "src/main/resources/assets/dragon_of_berk/models/item/gronkelmagma.json"
+          "src/main/java/net/mcreator/dragon_of_berk/client/renderer/GronkelRenderer.java",
+          "src/main/resources/data/dragon_of_berk/forge/biome_modifier/gronkel_biome_modifier.json",
+          "src/main/java/net/mcreator/dragon_of_berk/entity/model/GronkelModel.java",
+          "src/main/resources/assets/dragon_of_berk/models/item/gronkel_spawn_egg.json",
+          "src/main/java/net/mcreator/dragon_of_berk/entity/GronkelEntity.java"
+        ]
+      },
+      "path": "~/Dragons"
+    },
+    {
+      "name": "Fishrecipe",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fishrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dragon_of_berk/recipes/fishrecipe.json"
+        ]
+      },
+      "path": "~/Recipe"
+    },
+    {
+      "name": "Fishblock",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fishblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dragon_of_berk/models/block/fishblock.json",
+          "src/main/resources/assets/dragon_of_berk/models/item/fishblock.json",
+          "src/main/resources/assets/dragon_of_berk/blockstates/fishblock.json",
+          "src/main/java/net/mcreator/dragon_of_berk/block/FishblockBlock.java"
         ]
       },
       "path": "~/Itens/Block"
     },
     {
-      "name": "Gronkelironmix",
-      "type": "item",
-      "sortid": 9,
+      "name": "GronkelIronOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "gronkelironmix",
+      "registry_name": "gronkel_iron_ore_block_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/dragon_of_berk/models/item/gronkelironmix.json",
-          "src/main/java/net/mcreator/dragon_of_berk/item/GronkelironmixItem.java"
+          "src/main/resources/data/dragon_of_berk/recipes/gronkel_iron_ore_block_recipe.json"
         ]
       },
-      "path": "~/Itens"
+      "path": "~/Recipe"
     },
     {
       "name": "Gronkelmagmashovel",
@@ -140,18 +220,18 @@
       "path": "~/Itens"
     },
     {
-      "name": "Liquidgronkeliron",
+      "name": "GronkelIronBlock",
       "type": "block",
-      "sortid": 11,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "liquidgronkeliron",
+      "registry_name": "gronkel_iron_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/dragon_of_berk/blockstates/liquidgronkeliron.json",
-          "src/main/java/net/mcreator/dragon_of_berk/block/LiquidgronkelironBlock.java",
-          "src/main/resources/assets/dragon_of_berk/models/item/liquidgronkeliron.json",
-          "src/main/resources/assets/dragon_of_berk/models/block/liquidgronkeliron.json"
+          "src/main/resources/assets/dragon_of_berk/blockstates/gronkel_iron_block.json",
+          "src/main/java/net/mcreator/dragon_of_berk/block/GronkelIronBlockBlock.java",
+          "src/main/resources/assets/dragon_of_berk/models/block/gronkel_iron_block.json",
+          "src/main/resources/assets/dragon_of_berk/models/item/gronkel_iron_block.json"
         ]
       },
       "path": "~/Itens/Block"
@@ -193,100 +273,6 @@
       "path": "~/Procedures"
     },
     {
-      "name": "Gronkel",
-      "type": "animatedentity",
-      "sortid": 13,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronkel",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dragon_of_berk/client/renderer/GronkelRenderer.java",
-          "src/main/resources/data/dragon_of_berk/forge/biome_modifier/gronkel_biome_modifier.json",
-          "src/main/java/net/mcreator/dragon_of_berk/entity/model/GronkelModel.java",
-          "src/main/resources/assets/dragon_of_berk/models/item/gronkel_spawn_egg.json",
-          "src/main/java/net/mcreator/dragon_of_berk/entity/GronkelEntity.java"
-        ]
-      },
-      "path": "~/Dragons"
-    },
-    {
-      "name": "Dragonsofberkdragons",
-      "type": "tab",
-      "sortid": 14,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dragonsofberkdragons",
-      "metadata": {
-        "files": []
-      }
-    },
-    {
-      "name": "Dragonsofberktools",
-      "type": "tab",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dragonsofberktools",
-      "metadata": {
-        "files": []
-      }
-    },
-    {
-      "name": "Mace",
-      "type": "tool",
-      "sortid": 17,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mace",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dragon_of_berk/item/MaceItem.java",
-          "src/main/resources/assets/dragon_of_berk/models/item/mace.json"
-        ]
-      },
-      "path": "~/Itens/Tools"
-    },
-    {
-      "name": "Dragonofberkitens",
-      "type": "tab",
-      "sortid": 18,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dragonofberkitens",
-      "metadata": {
-        "files": []
-      }
-    },
-    {
-      "name": "Dragonsofberkblocks",
-      "type": "tab",
-      "sortid": 19,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dragonsofberkblocks",
-      "metadata": {
-        "files": []
-      }
-    },
-    {
-      "name": "Fishblock",
-      "type": "block",
-      "sortid": 20,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fishblock",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/dragon_of_berk/models/block/fishblock.json",
-          "src/main/resources/assets/dragon_of_berk/models/item/fishblock.json",
-          "src/main/resources/assets/dragon_of_berk/blockstates/fishblock.json",
-          "src/main/java/net/mcreator/dragon_of_berk/block/FishblockBlock.java"
-        ]
-      },
-      "path": "~/Itens/Block"
-    },
-    {
       "name": "Fishblockrecipe",
       "type": "recipe",
       "sortid": 21,
@@ -301,18 +287,19 @@
       "path": "~/Recipe"
     },
     {
-      "name": "Fishrecipe",
-      "type": "recipe",
-      "sortid": 22,
+      "name": "GronkelIron",
+      "type": "item",
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "fishrecipe",
+      "registry_name": "gronkel_iron",
       "metadata": {
         "files": [
-          "src/main/resources/data/dragon_of_berk/recipes/fishrecipe.json"
+          "src/main/resources/assets/dragon_of_berk/models/item/gronkel_iron.json",
+          "src/main/java/net/mcreator/dragon_of_berk/item/GronkelIronItem.java"
         ]
       },
-      "path": "~/Recipe"
+      "path": "~/Itens"
     },
     {
       "name": "Battleaxe",
@@ -330,49 +317,6 @@
       "path": "~/Itens/Tools"
     },
     {
-      "name": "Gronkelironnugget",
-      "type": "item",
-      "sortid": 24,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronkelironnugget",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dragon_of_berk/item/GronkelironnuggetItem.java",
-          "src/main/resources/assets/dragon_of_berk/models/item/gronkelironnugget.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
-      "name": "Macerecipe",
-      "type": "recipe",
-      "sortid": 25,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "macerecipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/dragon_of_berk/recipes/macerecipe.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
-      "name": "Battleaxerecipe",
-      "type": "recipe",
-      "sortid": 26,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "battleaxerecipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/dragon_of_berk/recipes/battleaxerecipe.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
       "name": "Gronkelironnuggetrecipe",
       "type": "recipe",
       "sortid": 27,
@@ -387,6 +331,89 @@
       "path": "~/Recipe"
     },
     {
+      "name": "Dragonofberkitens",
+      "type": "tab",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragonofberkitens",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Gronkelironmix",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronkelironmix",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dragon_of_berk/models/item/gronkelironmix.json",
+          "src/main/java/net/mcreator/dragon_of_berk/item/GronkelironmixItem.java"
+        ]
+      },
+      "path": "~/Itens"
+    },
+    {
+      "name": "Mace",
+      "type": "tool",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mace",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/item/MaceItem.java",
+          "src/main/resources/assets/dragon_of_berk/models/item/mace.json"
+        ]
+      },
+      "path": "~/Itens/Tools"
+    },
+    {
+      "name": "GronkelIronBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronkel_iron_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dragon_of_berk/recipes/gronkel_iron_block_ore_recipe.json"
+        ]
+      },
+      "path": "~/Recipe"
+    },
+    {
+      "name": "Gronkelmagma",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronkelmagma",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dragon_of_berk/models/block/gronkelmagma.json",
+          "src/main/resources/assets/dragon_of_berk/blockstates/gronkelmagma.json",
+          "src/main/java/net/mcreator/dragon_of_berk/block/GronkelmagmaBlock.java",
+          "src/main/resources/assets/dragon_of_berk/models/item/gronkelmagma.json"
+        ]
+      },
+      "path": "~/Itens/Block"
+    },
+    {
+      "name": "Dragonsofberkdragons",
+      "type": "tab",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragonsofberkdragons",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
       "name": "Gronkelironrecipe",
       "type": "recipe",
       "sortid": 28,
@@ -399,71 +426,23 @@
         ]
       },
       "path": "~/Recipe"
-    },
-    {
-      "name": "Gronkelironnuggetrecipe2",
-      "type": "recipe",
-      "sortid": 29,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronkelironnuggetrecipe_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/dragon_of_berk/recipes/gronkelironnuggetrecipe_2.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
-      "name": "Gronkelironnuggetrecipe3",
-      "type": "recipe",
-      "sortid": 30,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gronkelironnuggetrecipe_3",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/dragon_of_berk/recipes/gronkelironnuggetrecipe_3.json"
-        ]
-      },
-      "path": "~/Recipe"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.dragon_of_berk.gronkelmagmashovel": "Gronkel Magma Shovel",
       "itemGroup.tabdragonsofberktools": "Dragons Of Berk Tools",
       "itemGroup.tabdragonsofberkblocks": "Dragons Of Berk Blocks",
-      "block.dragon_of_berk.liquidgronkeliron": "Liquid Gronkel Iron",
-      "item_group.dragon_of_berk.dragonsofberkblocks": "Dragons Of Berk Blocks",
-      "block.dragon_of_berk.fishblock": "Fish Block",
-      "item.dragon_of_berk.gronkelironnugget": "Gronkel Iron Nugget",
-      "itemGroup.tabdragonofberkitens": "Dragons Of Berk Itens",
-      "item_group.dragon_of_berk.dragonsofberkdragons": "Dragons Of Berk Dragons",
-      "entity.dragon_of_berk.gronkel": "Gronkel",
-      "item.dragon_of_berk.battleaxe": "Battle Axe",
-      "item.dragon_of_berk.mace": "Mace",
-      "item_group.dragon_of_berk.dragonofberkitens": "Dragons Of Berk Itens",
-      "block.dragon_of_berk.gronkel_iron_block": "Block of Gronkel Iron",
       "entity.dragon_of_berk.papa_tudo": "Papa Tudo",
-      "item.dragon_of_berk.gronkelironmix": "Gronkel Iron Mix",
-      "item.dragon_of_berk.gronkel_spawn_egg": "Gronkel Spawn Egg",
-      "item_group.dragon_of_berk.dragonsofberktools": "Dragons Of Berk Tools",
+      "itemGroup.tabdragonofberkitens": "Dragons Of Berk Itens",
       "item.dragon_of_berk.papa_tudo_spawn_egg": "Papa Tudo Spawn Egg",
-      "itemGroup.tabdragonsofberkdragons": "Dragons Of Berk Dragons",
-      "item.dragon_of_berk.gronkel_iron": "Gronkel Iron",
-      "block.dragon_of_berk.gronkelmagma": "Gronkel Magma"
+      "itemGroup.tabdragonsofberkdragons": "Dragons Of Berk Dragons"
     }
   },
   "foldersRoot": {
     "name": "~",
     "children": [
-      {
-        "name": "Dragons",
-        "children": []
-      },
       {
         "name": "Itens",
         "children": [
@@ -478,11 +457,15 @@
         ]
       },
       {
-        "name": "Procedures",
+        "name": "Dragons",
         "children": []
       },
       {
-        "name": "Animals",
+        "name": "basik",
+        "children": []
+      },
+      {
+        "name": "Procedures",
         "children": []
       },
       {
@@ -492,6 +475,10 @@
       {
         "name": "Recipe",
         "children": []
+      },
+      {
+        "name": "Animals",
+        "children": []
       }
     ]
   },
@@ -499,9 +486,9 @@
     "modid": "dragon_of_berk",
     "modName": "Dragon of Berk",
     "version": "1.0.0",
-    "author": "Mateus Kh, BEN 10000, Caiobb26 e ZGAMERPLEY MCreator",
+    "author": "Mateus Kunz Hippler, MCreator",
     "websiteURL": "https://mcreator.net",
-    "license": "All Rights Reserved",
+    "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": false,
     "serverSideOnly": false,
     "requiredMods": [],
@@ -511,7 +498,7 @@
       "curios_api",
       "geckolib"
     ],
-    "currentGenerator": "forge-1.19.2",
+    "currentGenerator": "forge-1.19.4",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.dragon_of_berk",
     "lockBaseModFiles": false

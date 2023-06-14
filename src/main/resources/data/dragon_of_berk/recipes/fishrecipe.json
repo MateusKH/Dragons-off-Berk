@@ -1,8 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "category": "misc",
   "ingredients": [
     {
-      "item": "dragon_of_berk:fishblock"
+      "item": "dragon_of_berk:deleted_mod_element"
     }
   ],
   "result": {
