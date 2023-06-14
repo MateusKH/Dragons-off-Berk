@@ -23,7 +23,7 @@ import net.mcreator.dragon_of_berk.DragonOfBerkMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DragonOfBerkModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, DragonOfBerkMod.MODID);
-	public static final RegistryObject<EntityType<PapaTudoEntity>> PAPA_TUDO = register("papa_tudo",
+	public static final RegistryObject<EntityType<PapaTudoEntity>> HOBGOBBLERS = register("hobgobblers",
 			EntityType.Builder.<PapaTudoEntity>of(PapaTudoEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(20).setUpdateInterval(3).setCustomClientFactory(PapaTudoEntity::new)
 
 					.sized(0.6f, 0.6f));
@@ -46,7 +46,7 @@ public class DragonOfBerkModEntities {
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
-		event.put(PAPA_TUDO.get(), PapaTudoEntity.createAttributes().build());
+		event.put(HOBGOBBLERS.get(), PapaTudoEntity.createAttributes().build());
 		event.put(GRONKEL.get(), GronkelEntity.createAttributes().build());
 	}
 }

@@ -1,0 +1,9 @@
+{
+  "parent": "dragon_of_berk:custom/ovosdepapatudo",
+  "textures": {
+    "all": "dragon_of_berk:blocks/ovosdepapatudo_texture",
+    "particle": "dragon_of_berk:blocks/ovosdepapatudo_texture",
+    "missing": "dragon_of_berk:blocks/ovosdepapatudo_texture"
+  },
+  "render_type": "solid"
+}

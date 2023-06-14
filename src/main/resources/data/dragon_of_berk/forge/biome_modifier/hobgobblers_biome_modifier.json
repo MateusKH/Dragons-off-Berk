@@ -4,7 +4,7 @@
     "type": "forge:any"
   },
   "spawners": {
-    "type": "dragon_of_berk:papa_tudo",
+    "type": "dragon_of_berk:hobgobblers",
     "weight": 20,
     "minCount": 4,
     "maxCount": 4

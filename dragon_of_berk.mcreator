@@ -6,13 +6,13 @@
       "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "papa_tudo",
+      "registry_name": "hobgobblers",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/dragon_of_berk/entity/model/PapaTudoModel.java",
-          "src/main/resources/assets/dragon_of_berk/models/item/papa_tudo_spawn_egg.json",
-          "src/main/resources/data/dragon_of_berk/forge/biome_modifier/papa_tudo_biome_modifier.json",
+          "src/main/resources/data/dragon_of_berk/forge/biome_modifier/hobgobblers_biome_modifier.json",
           "src/main/java/net/mcreator/dragon_of_berk/client/renderer/PapaTudoRenderer.java",
+          "src/main/resources/assets/dragon_of_berk/models/item/hobgobblers_spawn_egg.json",
           "src/main/java/net/mcreator/dragon_of_berk/entity/PapaTudoEntity.java"
         ]
       },
@@ -427,6 +427,104 @@
         ]
       },
       "path": "~/Recipe"
+    },
+    {
+      "name": "Hobgobblerseggs",
+      "type": "block",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hobgobblerseggs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dragon_of_berk/models/item/hobgobblerseggs.json",
+          "src/main/resources/assets/dragon_of_berk/models/block/hobgobblerseggs.json",
+          "src/main/java/net/mcreator/dragon_of_berk/block/HobgobblerseggsBlock.java",
+          "src/main/resources/assets/dragon_of_berk/blockstates/hobgobblerseggs.json"
+        ]
+      },
+      "path": "~/Itens/Block"
+    },
+    {
+      "name": "CrackedHobgobblerseggs",
+      "type": "block",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cracked_hobgobblerseggs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dragon_of_berk/blockstates/cracked_hobgobblerseggs.json",
+          "src/main/resources/assets/dragon_of_berk/models/block/cracked_hobgobblerseggs.json",
+          "src/main/java/net/mcreator/dragon_of_berk/block/CrackedHobgobblerseggsBlock.java",
+          "src/main/resources/assets/dragon_of_berk/models/item/cracked_hobgobblerseggs.json"
+        ]
+      },
+      "path": "~/Itens/Block"
+    },
+    {
+      "name": "CrackedHobgobblerseggsEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cracked_hobgobblerseggs_entity_walks_on_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/procedures/CrackedHobgobblerseggsEntityWalksOnTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "CrackedHobgobblerseggsBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cracked_hobgobblerseggs_block_destroyed_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/procedures/CrackedHobgobblerseggsBlockDestroyedByPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [],
@@ -440,15 +538,17 @@
       "item.dragon_of_berk.gronkelironnugget": "Gronkel Iron Nugget",
       "block.dragon_of_berk.fishblock": "Fish Block",
       "itemGroup.tabdragonofberkitens": "Dragons Of Berk Itens",
+      "block.dragon_of_berk.cracked_hobgobblerseggs": "Hobgobblerseggs",
       "entity.dragon_of_berk.gronkel": "Gronkel",
       "item.dragon_of_berk.battleaxe": "Battle Axe",
       "item.dragon_of_berk.mace": "Mace",
       "block.dragon_of_berk.gronkel_iron_block": "Block of Gronkel Iron",
-      "entity.dragon_of_berk.papa_tudo": "Papa Tudo",
       "item.dragon_of_berk.gronkelironmix": "Gronkel Iron Mix",
+      "entity.dragon_of_berk.hobgobblers": "Hobgobblers",
       "item.dragon_of_berk.gronkel_spawn_egg": "Gronkel Spawn Egg",
-      "item.dragon_of_berk.papa_tudo_spawn_egg": "Papa Tudo Spawn Egg",
+      "block.dragon_of_berk.hobgobblerseggs": "Hobgobblerseggs",
       "itemGroup.tabdragonsofberkdragons": "Dragons Of Berk Dragons",
+      "item.dragon_of_berk.hobgobblers_spawn_egg": "Hobgobblers Spawn Egg",
       "item.dragon_of_berk.gronkel_iron": "Gronkel Iron",
       "block.dragon_of_berk.gronkelmagma": "Gronkel Magma"
     }

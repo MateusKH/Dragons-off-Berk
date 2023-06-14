@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "missing": "ovosdepapatudorachado_texture"
+      },
+      "name": "default"
+    }
+  }
+}

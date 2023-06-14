@@ -17,7 +17,7 @@ public class DragonOfBerkModTabs {
 		TAB_DRAGONSOFBERKDRAGONS = new CreativeModeTab("tabdragonsofberkdragons") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(DragonOfBerkModItems.PAPA_TUDO_SPAWN_EGG.get());
+				return new ItemStack(DragonOfBerkModItems.HOBGOBBLERS_SPAWN_EGG.get());
 			}
 
 			@Override

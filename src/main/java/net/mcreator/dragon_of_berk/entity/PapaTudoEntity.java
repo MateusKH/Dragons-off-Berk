@@ -63,7 +63,7 @@ public class PapaTudoEntity extends PathfinderMob implements IAnimatable {
 	public String animationprocedure = "empty";
 
 	public PapaTudoEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(DragonOfBerkModEntities.PAPA_TUDO.get(), world);
+		this(DragonOfBerkModEntities.HOBGOBBLERS.get(), world);
 	}
 
 	public PapaTudoEntity(EntityType<PapaTudoEntity> type, Level world) {
@@ -163,7 +163,7 @@ public class PapaTudoEntity extends PathfinderMob implements IAnimatable {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(DragonOfBerkModEntities.PAPA_TUDO.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+		SpawnPlacements.register(DragonOfBerkModEntities.HOBGOBBLERS.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 	}
 
