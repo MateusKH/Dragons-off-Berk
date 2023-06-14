@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "gronkeliron_gem",
+    "texture": "gronkel_iron_ingot",
     "customModelName": "Normal",
-    "name": "GronkelIron",
+    "name": "Gronkel Iron",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:Dragonofberkitens"
     },
     "stackSize": 64,
     "enchantability": 0,

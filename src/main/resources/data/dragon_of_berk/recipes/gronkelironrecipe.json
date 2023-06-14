@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "dragon_of_berk:gronkelironnugget"
+    },
+    "1": {
+      "item": "dragon_of_berk:gronkelironnugget"
+    },
+    "2": {
+      "item": "dragon_of_berk:gronkelironnugget"
+    },
+    "3": {
+      "item": "dragon_of_berk:gronkelironnugget"
+    },
+    "4": {
+      "item": "dragon_of_berk:gronkelironnugget"
+    },
+    "5": {
+      "item": "dragon_of_berk:gronkelironnugget"
+    },
+    "6": {
+      "item": "dragon_of_berk:gronkelironnugget"
+    },
+    "7": {
+      "item": "dragon_of_berk:gronkelironnugget"
+    },
+    "8": {
+      "item": "dragon_of_berk:gronkelironnugget"
+    }
+  },
+  "result": {
+    "item": "dragon_of_berk:gronkel_iron",
+    "count": 1
+  }
+}

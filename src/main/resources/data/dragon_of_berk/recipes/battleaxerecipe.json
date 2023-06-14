@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    " 45",
+    "6  "
+  ],
+  "key": {
+    "1": {
+      "item": "dragon_of_berk:gronkel_iron"
+    },
+    "2": {
+      "item": "dragon_of_berk:gronkel_iron"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "dragon_of_berk:gronkel_iron"
+    },
+    "6": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "dragon_of_berk:battleaxe",
+    "count": 1
+  }
+}

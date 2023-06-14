@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "dragon_of_berk:mace"
+  },
+  "result": "dragon_of_berk:gronkelironnugget"
+}

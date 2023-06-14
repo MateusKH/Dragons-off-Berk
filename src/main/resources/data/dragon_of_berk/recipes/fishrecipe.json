@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dragon_of_berk:fishblock"
+    }
+  ],
+  "result": {
+    "item": "minecraft:cod",
+    "count": 9
+  }
+}

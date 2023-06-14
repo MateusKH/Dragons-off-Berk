@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dragon_of_berk:gronkel_iron"
+    }
+  ],
+  "result": {
+    "item": "dragon_of_berk:gronkelironnugget",
+    "count": 9
+  }
+}

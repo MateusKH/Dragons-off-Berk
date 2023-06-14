@@ -1,6 +1,6 @@
 modLoader="javafml"
-loaderVersion="[45,)"
-license="Academic Free License v3.0"
+loaderVersion="[43,)"
+license="All Rights Reserved"
 
 [[mods]]
 modId="dragon_of_berk"
@@ -8,19 +8,19 @@ version="1.0.0"
 displayName="Dragon of Berk"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
-authors="Mateus Kunz Hippler, MCreator"
+authors="Mateus Kh, BEN 10000, Caiobb26 e ZGAMERPLEY MCreator"
 
 [[dependencies.dragon_of_berk]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.4]"
+    versionRange="[1.19.2]"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.dragon_of_berk]]
     modId="forge"
     mandatory=true
-    versionRange="[45.1.0]"
+    versionRange="[43.2.0]"
     ordering="NONE"
     side="BOTH"
 

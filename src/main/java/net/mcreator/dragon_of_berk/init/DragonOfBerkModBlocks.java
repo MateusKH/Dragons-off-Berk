@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Block;
 import net.mcreator.dragon_of_berk.block.LiquidgronkelironBlock;
 import net.mcreator.dragon_of_berk.block.GronkelmagmaBlock;
 import net.mcreator.dragon_of_berk.block.GronkelIronBlockBlock;
+import net.mcreator.dragon_of_berk.block.FishblockBlock;
 import net.mcreator.dragon_of_berk.DragonOfBerkMod;
 
 public class DragonOfBerkModBlocks {
@@ -20,4 +21,5 @@ public class DragonOfBerkModBlocks {
 	public static final RegistryObject<Block> GRONKEL_IRON_BLOCK = REGISTRY.register("gronkel_iron_block", () -> new GronkelIronBlockBlock());
 	public static final RegistryObject<Block> GRONKELMAGMA = REGISTRY.register("gronkelmagma", () -> new GronkelmagmaBlock());
 	public static final RegistryObject<Block> LIQUIDGRONKELIRON = REGISTRY.register("liquidgronkeliron", () -> new LiquidgronkelironBlock());
+	public static final RegistryObject<Block> FISHBLOCK = REGISTRY.register("fishblock", () -> new FishblockBlock());
 }

@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "tag": "minecraft:fishes"
+    },
+    "1": {
+      "tag": "minecraft:fishes"
+    },
+    "2": {
+      "tag": "minecraft:fishes"
+    },
+    "3": {
+      "tag": "minecraft:fishes"
+    },
+    "4": {
+      "tag": "minecraft:fishes"
+    },
+    "5": {
+      "tag": "minecraft:fishes"
+    },
+    "6": {
+      "tag": "minecraft:fishes"
+    },
+    "7": {
+      "tag": "minecraft:fishes"
+    },
+    "8": {
+      "tag": "minecraft:fishes"
+    }
+  },
+  "result": {
+    "item": "dragon_of_berk:fishblock",
+    "count": 1
+  }
+}

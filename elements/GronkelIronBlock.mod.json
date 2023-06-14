@@ -33,14 +33,14 @@
         "subtract": false
       }
     ],
-    "name": "Block of GronkelIron",
+    "name": "Block of Gronkel Iron",
     "specialInfo": [],
     "hardness": 5.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:Dragonsofberkblocks"
     },
     "destroyTool": "pickaxe",
     "customDrop": {

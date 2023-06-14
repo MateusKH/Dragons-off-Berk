@@ -1,0 +1,7 @@
+{
+  "parent": "dragon_of_berk:custom/battle_axe",
+  "textures": {
+    "0": "dragon_of_berk:blocks/machadovikingtexture",
+    "particle": "dragon_of_berk:items/machadovikingtexture"
+  }
+}
