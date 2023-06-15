@@ -8,7 +8,7 @@ version="1.0.0"
 displayName="Dragon of Berk"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
-authors="Mateus Kunz Hippler, MCreator"
+authors="MCreator"
 
 [[dependencies.dragon_of_berk]]
     modId="minecraft"
