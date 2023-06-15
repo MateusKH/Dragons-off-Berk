@@ -26,6 +26,7 @@ import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.LeapAtTargetGoal;
+import net.minecraft.world.entity.ai.goal.FollowMobGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -113,6 +114,7 @@ public class PapaTudoEntity extends PathfinderMob implements IAnimatable {
 		this.goalSelector.addGoal(7, new FloatGoal(this));
 		this.goalSelector.addGoal(8, new LeapAtTargetGoal(this, (float) 0.5));
 		this.goalSelector.addGoal(9, new RemoveBlockGoal(DragonOfBerkModBlocks.FISHBLOCK.get(), this, 1, (int) 3));
+		this.goalSelector.addGoal(10, new FollowMobGoal(this, (float) 1, 10, 5));
 	}
 
 	@Override
