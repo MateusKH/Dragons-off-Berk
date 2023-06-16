@@ -525,6 +525,124 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "Pag1",
+      "type": "gui",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pag_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/client/gui/Pag1Screen.java",
+          "src/main/java/net/mcreator/dragon_of_berk/network/Pag1ButtonMessage.java",
+          "src/main/java/net/mcreator/dragon_of_berk/world/inventory/Pag1Menu.java"
+        ]
+      },
+      "path": "~/bookofdragons"
+    },
+    {
+      "name": "Pag1seta",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pag_1seta",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/procedures/Pag1setaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/book"
+    },
+    {
+      "name": "Pag2",
+      "type": "gui",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pag_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/world/inventory/Pag2Menu.java",
+          "src/main/java/net/mcreator/dragon_of_berk/client/gui/Pag2Screen.java"
+        ]
+      },
+      "path": "~/bookofdragons"
+    },
+    {
+      "name": "Openpag1",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "openpag_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/procedures/Openpag1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/book"
+    },
+    {
+      "name": "Bookofdragons",
+      "type": "item",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bookofdragons",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dragon_of_berk/models/item/bookofdragons.json",
+          "src/main/java/net/mcreator/dragon_of_berk/item/BookofdragonsItem.java"
+        ]
+      },
+      "path": "~/Itens"
     }
   ],
   "variable_elements": [],
@@ -534,14 +652,17 @@
       "item.dragon_of_berk.gronkelmagmashovel": "Gronkel Magma Shovel",
       "itemGroup.tabdragonsofberktools": "Dragons Of Berk Tools",
       "itemGroup.tabdragonsofberkblocks": "Dragons Of Berk Blocks",
+      "gui.dragon_of_berk.pag_1.label_hobgobblers": "Hobgobblers",
       "block.dragon_of_berk.liquidgronkeliron": "Liquid Gronkel Iron",
       "item.dragon_of_berk.gronkelironnugget": "Gronkel Iron Nugget",
       "block.dragon_of_berk.fishblock": "Fish Block",
       "itemGroup.tabdragonofberkitens": "Dragons Of Berk Itens",
+      "item.dragon_of_berk.bookofdragons": "Book Of Dragons",
       "block.dragon_of_berk.cracked_hobgobblerseggs": "Hobgobblerseggs",
       "entity.dragon_of_berk.gronkel": "Gronkel",
       "item.dragon_of_berk.battleaxe": "Battle Axe",
       "item.dragon_of_berk.mace": "Mace",
+      "gui.dragon_of_berk.pag_2.label_pag_2": "Pag 2",
       "block.dragon_of_berk.gronkel_iron_block": "Block of Gronkel Iron",
       "item.dragon_of_berk.gronkelironmix": "Gronkel Iron Mix",
       "entity.dragon_of_berk.hobgobblers": "Hobgobblers",
@@ -579,7 +700,12 @@
       },
       {
         "name": "Procedures",
-        "children": []
+        "children": [
+          {
+            "name": "book",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Tags",
@@ -591,6 +717,10 @@
       },
       {
         "name": "Animals",
+        "children": []
+      },
+      {
+        "name": "bookofdragons",
         "children": []
       }
     ]

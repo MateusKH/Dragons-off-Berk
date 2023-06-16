@@ -19,6 +19,7 @@ import net.mcreator.dragon_of_berk.item.GronkelmagmashovelItem;
 import net.mcreator.dragon_of_berk.item.GronkelironnuggetItem;
 import net.mcreator.dragon_of_berk.item.GronkelironmixItem;
 import net.mcreator.dragon_of_berk.item.GronkelIronItem;
+import net.mcreator.dragon_of_berk.item.BookofdragonsItem;
 import net.mcreator.dragon_of_berk.item.BattleaxeItem;
 import net.mcreator.dragon_of_berk.DragonOfBerkMod;
 
@@ -40,6 +41,7 @@ public class DragonOfBerkModItems {
 	public static final RegistryObject<Item> GRONKELIRONNUGGET = REGISTRY.register("gronkelironnugget", () -> new GronkelironnuggetItem());
 	public static final RegistryObject<Item> HOBGOBBLERSEGGS = block(DragonOfBerkModBlocks.HOBGOBBLERSEGGS, DragonOfBerkModTabs.TAB_DRAGONSOFBERKBLOCKS);
 	public static final RegistryObject<Item> CRACKED_HOBGOBBLERSEGGS = block(DragonOfBerkModBlocks.CRACKED_HOBGOBBLERSEGGS, DragonOfBerkModTabs.TAB_DRAGONSOFBERKBLOCKS);
+	public static final RegistryObject<Item> BOOKOFDRAGONS = REGISTRY.register("bookofdragons", () -> new BookofdragonsItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
