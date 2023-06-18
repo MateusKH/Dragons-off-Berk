@@ -24,6 +24,11 @@ public class Pag1Screen extends AbstractContainerScreen<Pag1Menu> {
 	private final int x, y, z;
 	private final Player entity;
 	ImageButton imagebutton_seta;
+	ImageButton imagebutton_nada3;
+	ImageButton imagebutton_nada31;
+	ImageButton imagebutton_nada32;
+	ImageButton imagebutton_nada33;
+	ImageButton imagebutton_nada34;
 
 	public Pag1Screen(Pag1Menu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -32,7 +37,7 @@ public class Pag1Screen extends AbstractContainerScreen<Pag1Menu> {
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 176;
+		this.imageWidth = 141;
 		this.imageHeight = 166;
 	}
 
@@ -52,6 +57,10 @@ public class Pag1Screen extends AbstractContainerScreen<Pag1Menu> {
 		RenderSystem.defaultBlendFunc();
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("dragon_of_berk:textures/screens/pagina.png"));
+		this.blit(ms, this.leftPos + -2, this.topPos + -11, 0, 0, 146, 180, 146, 180);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -71,7 +80,7 @@ public class Pag1Screen extends AbstractContainerScreen<Pag1Menu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.dragon_of_berk.pag_1.label_hobgobblers"), 60, 2, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.dragon_of_berk.pag_1.label_hobgobblers"), 61, -2, -12829636);
 	}
 
 	@Override
@@ -84,7 +93,7 @@ public class Pag1Screen extends AbstractContainerScreen<Pag1Menu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		imagebutton_seta = new ImageButton(this.leftPos + 163, this.topPos + 154, 16, 16, 0, 0, 16, new ResourceLocation("dragon_of_berk:textures/screens/atlas/imagebutton_seta.png"), 16, 32, e -> {
+		imagebutton_seta = new ImageButton(this.leftPos + 106, this.topPos + 138, 35, 33, 0, 0, 33, new ResourceLocation("dragon_of_berk:textures/screens/atlas/imagebutton_seta.png"), 35, 66, e -> {
 			if (true) {
 				DragonOfBerkMod.PACKET_HANDLER.sendToServer(new Pag1ButtonMessage(0, x, y, z));
 				Pag1ButtonMessage.handleButtonAction(entity, 0, x, y, z);
@@ -92,5 +101,33 @@ public class Pag1Screen extends AbstractContainerScreen<Pag1Menu> {
 		});
 		guistate.put("button:imagebutton_seta", imagebutton_seta);
 		this.addRenderableWidget(imagebutton_seta);
+		imagebutton_nada3 = new ImageButton(this.leftPos + 19, this.topPos + 8, 48, 48, 0, 0, 48, new ResourceLocation("dragon_of_berk:textures/screens/atlas/imagebutton_nada3.png"), 48, 96, e -> {
+			if (true) {
+				DragonOfBerkMod.PACKET_HANDLER.sendToServer(new Pag1ButtonMessage(1, x, y, z));
+				Pag1ButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
+		});
+		guistate.put("button:imagebutton_nada3", imagebutton_nada3);
+		this.addRenderableWidget(imagebutton_nada3);
+		imagebutton_nada31 = new ImageButton(this.leftPos + 79, this.topPos + 8, 48, 48, 0, 0, 48, new ResourceLocation("dragon_of_berk:textures/screens/atlas/imagebutton_nada31.png"), 48, 96, e -> {
+			if (true) {
+				DragonOfBerkMod.PACKET_HANDLER.sendToServer(new Pag1ButtonMessage(2, x, y, z));
+				Pag1ButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
+		});
+		guistate.put("button:imagebutton_nada31", imagebutton_nada31);
+		this.addRenderableWidget(imagebutton_nada31);
+		imagebutton_nada32 = new ImageButton(this.leftPos + 19, this.topPos + 61, 48, 48, 0, 0, 48, new ResourceLocation("dragon_of_berk:textures/screens/atlas/imagebutton_nada32.png"), 48, 96, e -> {
+		});
+		guistate.put("button:imagebutton_nada32", imagebutton_nada32);
+		this.addRenderableWidget(imagebutton_nada32);
+		imagebutton_nada33 = new ImageButton(this.leftPos + 80, this.topPos + 61, 48, 48, 0, 0, 48, new ResourceLocation("dragon_of_berk:textures/screens/atlas/imagebutton_nada33.png"), 48, 96, e -> {
+		});
+		guistate.put("button:imagebutton_nada33", imagebutton_nada33);
+		this.addRenderableWidget(imagebutton_nada33);
+		imagebutton_nada34 = new ImageButton(this.leftPos + 51, this.topPos + 110, 48, 48, 0, 0, 48, new ResourceLocation("dragon_of_berk:textures/screens/atlas/imagebutton_nada34.png"), 48, 96, e -> {
+		});
+		guistate.put("button:imagebutton_nada34", imagebutton_nada34);
+		this.addRenderableWidget(imagebutton_nada34);
 	}
 }

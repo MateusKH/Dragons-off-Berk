@@ -10,6 +10,8 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.dragon_of_berk.world.inventory.Pag2Menu;
+import net.mcreator.dragon_of_berk.network.Pag2ButtonMessage;
+import net.mcreator.dragon_of_berk.DragonOfBerkMod;
 
 import java.util.HashMap;
 
@@ -21,7 +23,9 @@ public class Pag2Screen extends AbstractContainerScreen<Pag2Menu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	ImageButton imagebutton_seta;
+	ImageButton imagebutton_nada3;
+	ImageButton imagebutton_nada31;
+	ImageButton imagebutton_seta_1virada;
 
 	public Pag2Screen(Pag2Menu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -30,7 +34,7 @@ public class Pag2Screen extends AbstractContainerScreen<Pag2Menu> {
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 176;
+		this.imageWidth = 141;
 		this.imageHeight = 166;
 	}
 
@@ -50,6 +54,10 @@ public class Pag2Screen extends AbstractContainerScreen<Pag2Menu> {
 		RenderSystem.defaultBlendFunc();
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("dragon_of_berk:textures/screens/pagina.png"));
+		this.blit(ms, this.leftPos + -2, this.topPos + -11, 0, 0, 146, 180, 146, 180);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -69,7 +77,7 @@ public class Pag2Screen extends AbstractContainerScreen<Pag2Menu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.dragon_of_berk.pag_2.label_pag_2"), 75, 1, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.dragon_of_berk.pag_2.label_hobgobblers"), 58, -3, -12829636);
 	}
 
 	@Override
@@ -82,9 +90,21 @@ public class Pag2Screen extends AbstractContainerScreen<Pag2Menu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		imagebutton_seta = new ImageButton(this.leftPos + 162, this.topPos + 153, 16, 16, 0, 0, 16, new ResourceLocation("dragon_of_berk:textures/screens/atlas/imagebutton_seta.png"), 16, 32, e -> {
+		imagebutton_nada3 = new ImageButton(this.leftPos + 19, this.topPos + 8, 48, 48, 0, 0, 48, new ResourceLocation("dragon_of_berk:textures/screens/atlas/imagebutton_nada3.png"), 48, 96, e -> {
 		});
-		guistate.put("button:imagebutton_seta", imagebutton_seta);
-		this.addRenderableWidget(imagebutton_seta);
+		guistate.put("button:imagebutton_nada3", imagebutton_nada3);
+		this.addRenderableWidget(imagebutton_nada3);
+		imagebutton_nada31 = new ImageButton(this.leftPos + 82, this.topPos + 7, 48, 48, 0, 0, 48, new ResourceLocation("dragon_of_berk:textures/screens/atlas/imagebutton_nada31.png"), 48, 96, e -> {
+		});
+		guistate.put("button:imagebutton_nada31", imagebutton_nada31);
+		this.addRenderableWidget(imagebutton_nada31);
+		imagebutton_seta_1virada = new ImageButton(this.leftPos + -2, this.topPos + 138, 35, 33, 0, 0, 33, new ResourceLocation("dragon_of_berk:textures/screens/atlas/imagebutton_seta_1virada.png"), 35, 66, e -> {
+			if (true) {
+				DragonOfBerkMod.PACKET_HANDLER.sendToServer(new Pag2ButtonMessage(2, x, y, z));
+				Pag2ButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
+		});
+		guistate.put("button:imagebutton_seta_1virada", imagebutton_seta_1virada);
+		this.addRenderableWidget(imagebutton_seta_1virada);
 	}
 }

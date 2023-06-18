@@ -1,0 +1,134 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 141,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_hobgobblers",
+          "text": {
+            "fixedValue": "Gronckle"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 195,
+          "y": 33
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "pagina.png",
+          "use1Xscale": false,
+          "x": 141,
+          "y": 26
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_seta_1virada",
+          "image": "seta_1virada.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "BoulderOpen"
+          },
+          "x": 138,
+          "y": 178
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_habitat_all_habitats",
+          "text": {
+            "fixedValue": "Habitat:Mountains"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 153,
+          "y": 130
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_class_fire",
+          "text": {
+            "fixedValue": "Class:Boulder"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 152,
+          "y": 142
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_fire_type_propane",
+          "text": {
+            "fixedValue": "Fire Type:Lava"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 152,
+          "y": 155
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_tamanhopequeno",
+          "text": {
+            "fixedValue": "Size:Medium"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 153,
+          "y": 167
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_length15_meters",
+          "text": {
+            "fixedValue": "Length:6 Meters"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 153,
+          "y": 179
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

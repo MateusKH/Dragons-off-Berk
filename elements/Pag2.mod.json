@@ -3,7 +3,7 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 176,
+    "width": 141,
     "height": 166,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
@@ -13,26 +13,58 @@
       {
         "type": "label",
         "data": {
-          "name": "label_pag_2",
+          "name": "label_hobgobblers",
           "text": {
-            "fixedValue": "Pag 2"
+            "fixedValue": "Index 2"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
           "x": 201,
-          "y": 38
+          "y": 34
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "pagina.png",
+          "use1Xscale": false,
+          "x": 141,
+          "y": 26
         }
       },
       {
         "type": "imagebutton",
         "data": {
-          "name": "imagebutton_seta",
-          "image": "seta.png",
-          "hoveredImage": "setahovered.png",
-          "x": 288,
-          "y": 190
+          "name": "imagebutton_nada3",
+          "image": "nada3.png",
+          "hoveredImage": "",
+          "x": 162,
+          "y": 45
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_nada31",
+          "image": "nada3.png",
+          "hoveredImage": "",
+          "x": 225,
+          "y": 44
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_seta_1virada",
+          "image": "seta_1virada.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "Pag2seta"
+          },
+          "x": 141,
+          "y": 175
         }
       }
     ],

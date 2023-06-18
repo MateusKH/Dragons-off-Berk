@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "workin",
+    "texture": "book",
     "customModelName": "Normal",
     "name": "Book Of Dragons",
     "rarity": "EPIC",

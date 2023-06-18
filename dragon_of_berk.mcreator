@@ -548,7 +548,7 @@
       "sortid": 35,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pag_1seta",
+      "registry_name": "indextoindex2",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/dragon_of_berk/procedures/Pag1setaProcedure.java"
@@ -576,22 +576,7 @@
           }
         ]
       },
-      "path": "~/Procedures/book"
-    },
-    {
-      "name": "Pag2",
-      "type": "gui",
-      "sortid": 36,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pag_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dragon_of_berk/world/inventory/Pag2Menu.java",
-          "src/main/java/net/mcreator/dragon_of_berk/client/gui/Pag2Screen.java"
-        ]
-      },
-      "path": "~/bookofdragons"
+      "path": "~/bookofdragons/procedures"
     },
     {
       "name": "Openpag1",
@@ -627,7 +612,7 @@
           }
         ]
       },
-      "path": "~/Procedures/book"
+      "path": "~/bookofdragons/procedures"
     },
     {
       "name": "Bookofdragons",
@@ -643,35 +628,431 @@
         ]
       },
       "path": "~/Itens"
+    },
+    {
+      "name": "Pag2",
+      "type": "gui",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pag_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/world/inventory/Pag2Menu.java",
+          "src/main/java/net/mcreator/dragon_of_berk/network/Pag2ButtonMessage.java",
+          "src/main/java/net/mcreator/dragon_of_berk/client/gui/Pag2Screen.java"
+        ]
+      },
+      "path": "~/bookofdragons"
+    },
+    {
+      "name": "StokerClass",
+      "type": "gui",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stoker_class",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/world/inventory/StokerClassMenu.java",
+          "src/main/java/net/mcreator/dragon_of_berk/network/StokerClassButtonMessage.java",
+          "src/main/java/net/mcreator/dragon_of_berk/client/gui/StokerClassScreen.java"
+        ]
+      },
+      "path": "~/bookofdragons"
+    },
+    {
+      "name": "Pag2seta",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pag_2seta",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/procedures/Pag2setaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/bookofdragons/procedures"
+    },
+    {
+      "name": "StokerOpen",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stoker_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/procedures/StokerOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/bookofdragons/procedures"
+    },
+    {
+      "name": "TerribleTerrorOpen",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terrible_terror_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/procedures/TerribleTerrorOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/bookofdragons/procedures"
+    },
+    {
+      "name": "MonstruousNightmareOpen",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "monstruous_nightmare_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/procedures/MonstruousNightmareOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/bookofdragons/procedures"
+    },
+    {
+      "name": "BoulderClass",
+      "type": "gui",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boulder_class",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/client/gui/BoulderClassScreen.java",
+          "src/main/java/net/mcreator/dragon_of_berk/network/BoulderClassButtonMessage.java",
+          "src/main/java/net/mcreator/dragon_of_berk/world/inventory/BoulderClassMenu.java"
+        ]
+      },
+      "path": "~/bookofdragons"
+    },
+    {
+      "name": "MonstruousNightmarePag",
+      "type": "gui",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "monstruous_nightmare_pag",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/network/MonstruousNightmarePagButtonMessage.java",
+          "src/main/java/net/mcreator/dragon_of_berk/world/inventory/MonstruousNightmarePagMenu.java",
+          "src/main/java/net/mcreator/dragon_of_berk/client/gui/MonstruousNightmarePagScreen.java"
+        ]
+      },
+      "path": "~/bookofdragons"
+    },
+    {
+      "name": "TerribleTerrorPag",
+      "type": "gui",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terrible_terror_pag",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/world/inventory/TerribleTerrorPagMenu.java",
+          "src/main/java/net/mcreator/dragon_of_berk/client/gui/TerribleTerrorPagScreen.java",
+          "src/main/java/net/mcreator/dragon_of_berk/network/TerribleTerrorPagButtonMessage.java"
+        ]
+      },
+      "path": "~/bookofdragons"
+    },
+    {
+      "name": "BoulderOpen",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boulder_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/procedures/BoulderOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/bookofdragons/procedures"
+    },
+    {
+      "name": "GroncklePag",
+      "type": "gui",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_pag",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/network/GroncklePagButtonMessage.java",
+          "src/main/java/net/mcreator/dragon_of_berk/client/gui/GroncklePagScreen.java",
+          "src/main/java/net/mcreator/dragon_of_berk/world/inventory/GroncklePagMenu.java"
+        ]
+      },
+      "path": "~/bookofdragons"
+    },
+    {
+      "name": "WhisperingDeathPag",
+      "type": "gui",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whispering_death_pag",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/world/inventory/WhisperingDeathPagMenu.java",
+          "src/main/java/net/mcreator/dragon_of_berk/client/gui/WhisperingDeathPagScreen.java",
+          "src/main/java/net/mcreator/dragon_of_berk/network/WhisperingDeathPagButtonMessage.java"
+        ]
+      },
+      "path": "~/bookofdragons"
+    },
+    {
+      "name": "WhisperingDeathOpen",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whispering_death_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/procedures/WhisperingDeathOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/bookofdragons/procedures"
+    },
+    {
+      "name": "GronckleOpen",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gronckle_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/procedures/GronckleOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/bookofdragons/procedures"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "itemGroup.tabdragonsofberkblocks": "Dragons Of Berk Blocks",
+      "block.dragon_of_berk.fishblock": "Fish Block",
+      "gui.dragon_of_berk.terrible_terror_pag.label_class_fire": "Class:Stoker",
+      "itemGroup.tabdragonofberkitens": "Dragons Of Berk Itens",
+      "gui.dragon_of_berk.terrible_terror_pag.label_hobgobblers": "Terrible Terror",
+      "gui.dragon_of_berk.whispering_death_pag.label_tamanhopequeno": "Size:Medium",
+      "block.dragon_of_berk.cracked_hobgobblerseggs": "Hobgobblerseggs",
+      "gui.dragon_of_berk.terrible_terror.button_terrible_terror": " Terrible Terror ",
+      "entity.dragon_of_berk.gronkel": "Gronkel",
+      "gui.dragon_of_berk.terrible_terror_pag.label_length15_meters": "Length:1,5 Meters",
+      "block.dragon_of_berk.hobgobblerseggs": "Hobgobblerseggs",
+      "gui.dragon_of_berk.terrible_terror_pag.label_habitat_all_habitats": "Habitat: All habitats",
+      "block.dragon_of_berk.gronkelmagma": "Gronkel Magma",
+      "gui.dragon_of_berk.pag_2.label_hobgobblers": "Index 2",
+      "gui.dragon_of_berk.gronckle_pag.label_tamanhopequeno": "Size:Medium",
       "item.dragon_of_berk.gronkelmagmashovel": "Gronkel Magma Shovel",
       "itemGroup.tabdragonsofberktools": "Dragons Of Berk Tools",
-      "itemGroup.tabdragonsofberkblocks": "Dragons Of Berk Blocks",
-      "gui.dragon_of_berk.pag_1.label_hobgobblers": "Hobgobblers",
-      "block.dragon_of_berk.liquidgronkeliron": "Liquid Gronkel Iron",
+      "gui.dragon_of_berk.whispering_death_pag.label_fire_type_propane": "Fire Type:Propane Fire",
+      "gui.dragon_of_berk.pag_1.label_hobgobblers": "Index",
+      "gui.dragon_of_berk.monstruous_nightmare_pag.label_fire_type_propane": "Fire Type:Kerosene Gel",
+      "gui.dragon_of_berk.gronckle_pag.label_class_fire": "Class:Boulder",
       "item.dragon_of_berk.gronkelironnugget": "Gronkel Iron Nugget",
-      "block.dragon_of_berk.fishblock": "Fish Block",
-      "itemGroup.tabdragonofberkitens": "Dragons Of Berk Itens",
-      "item.dragon_of_berk.bookofdragons": "Book Of Dragons",
-      "block.dragon_of_berk.cracked_hobgobblerseggs": "Hobgobblerseggs",
-      "entity.dragon_of_berk.gronkel": "Gronkel",
-      "item.dragon_of_berk.battleaxe": "Battle Axe",
+      "gui.dragon_of_berk.terrible_terror_pag.label_tamanhopequeno": "Size: Small",
+      "gui.dragon_of_berk.gronckle_pag.label_habitat_all_habitats": "Habitat:Mountains",
       "item.dragon_of_berk.mace": "Mace",
-      "gui.dragon_of_berk.pag_2.label_pag_2": "Pag 2",
-      "block.dragon_of_berk.gronkel_iron_block": "Block of Gronkel Iron",
+      "gui.dragon_of_berk.terrible_terror_pag.label_fire_type_propane": "Fire Type: Propane",
+      "gui.dragon_of_berk.whispering_death_pag.label_habitat_all_habitats": "Habitat:Caves",
       "item.dragon_of_berk.gronkelironmix": "Gronkel Iron Mix",
+      "gui.dragon_of_berk.stoker_class.button_monstrous_nightmare": "Monstrous Nightmare",
+      "gui.dragon_of_berk.gronckle_pag.label_length15_meters": "Length:6 Meters",
+      "gui.dragon_of_berk.gronckle_pag.label_fire_type_propane": "Fire Type:Lava",
+      "gui.dragon_of_berk.monstruous_nightmare_pag.label_tamanhopequeno": "Size:Medium",
+      "block.dragon_of_berk.liquidgronkeliron": "Liquid Gronkel Iron",
+      "gui.dragon_of_berk.monstruous_nightmare_pag.label_hobgobblers": "Monstruous Nightmare",
+      "item.dragon_of_berk.bookofdragons": "Book Of Dragons",
+      "gui.dragon_of_berk.boulder_class.button_monstrous_nightmare": "Whispering Death",
+      "block.dragon_of_berk.gronkel_iron_block": "Block of Gronkel Iron",
+      "gui.dragon_of_berk.monstruous_nightmare_pag.label_habitat_all_habitats": "Habitat:Taiga",
       "entity.dragon_of_berk.hobgobblers": "Hobgobblers",
       "item.dragon_of_berk.gronkel_spawn_egg": "Gronkel Spawn Egg",
-      "block.dragon_of_berk.hobgobblerseggs": "Hobgobblerseggs",
+      "gui.dragon_of_berk.stoker_class.button_terrible_terror": " Terrible Terror ",
+      "gui.dragon_of_berk.gronckle_pag.label_hobgobblers": "Gronckle",
+      "gui.dragon_of_berk.monstruous_nightmare_pag.label_length15_meters": "Length:21,5 Meters",
+      "gui.dragon_of_berk.monstruous_nightmare_pag.label_class_fire": "Class:Stoker",
+      "gui.dragon_of_berk.whispering_death_pag.label_class_fire": "Class:Boulder",
+      "gui.dragon_of_berk.whispering_death_pag.label_hobgobblers": "Whispering Death",
+      "item.dragon_of_berk.battleaxe": "Battle Axe",
+      "gui.dragon_of_berk.boulder_class.label_hobgobblers": "Boulder",
+      "gui.dragon_of_berk.stoker_class.label_hobgobblers": "Stoker",
+      "gui.dragon_of_berk.whispering_death_pag.label_length15_meters": "Length:29 Meters",
+      "gui.dragon_of_berk.terrible_terror.button_monstrous_nightmare": "Monstrous Nightmare",
+      "gui.dragon_of_berk.boulder_class.button_terrible_terror": "Gronckle",
       "itemGroup.tabdragonsofberkdragons": "Dragons Of Berk Dragons",
       "item.dragon_of_berk.hobgobblers_spawn_egg": "Hobgobblers Spawn Egg",
-      "item.dragon_of_berk.gronkel_iron": "Gronkel Iron",
-      "block.dragon_of_berk.gronkelmagma": "Gronkel Magma"
+      "item.dragon_of_berk.gronkel_iron": "Gronkel Iron"
     }
   },
   "foldersRoot": {
@@ -700,12 +1081,7 @@
       },
       {
         "name": "Procedures",
-        "children": [
-          {
-            "name": "book",
-            "children": []
-          }
-        ]
+        "children": []
       },
       {
         "name": "Tags",
@@ -721,7 +1097,12 @@
       },
       {
         "name": "bookofdragons",
-        "children": []
+        "children": [
+          {
+            "name": "procedures",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -729,9 +1110,9 @@
     "modid": "dragon_of_berk",
     "modName": "Dragon of Berk",
     "version": "1.0.0",
-    "author": "MCreator",
+    "author": "by: ZGAMERPLEY, BEN 10000, Caiobb26 and Mateus KhMCreator",
     "websiteURL": "https://mcreator.net",
-    "license": "Academic Free License v3.0",
+    "license": "All Rights Reserved",
     "disableForgeVersionCheck": false,
     "serverSideOnly": false,
     "requiredMods": [],
@@ -742,7 +1123,7 @@
       "geckolib"
     ],
     "currentGenerator": "forge-1.19.2",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "credits": "https://discord.gg/KamrrKsM",
     "modElementsPackage": "net.mcreator.dragon_of_berk",
     "lockBaseModFiles": false
   },
