@@ -88,8 +88,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 152,
-          "y": 155
+          "x": 153,
+          "y": 154
         }
       },
       {
@@ -128,7 +128,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }

@@ -8,7 +8,7 @@
     "name": "Gronkel Magma Shovel",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:Dragonofberkitens"
+      "value": "CUSTOM:DevBuild"
     },
     "stackSize": 64,
     "enchantability": 0,

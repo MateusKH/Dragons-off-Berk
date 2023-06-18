@@ -77,7 +77,7 @@ public class MonstruousNightmarePagScreen extends AbstractContainerScreen<Monstr
 		this.font.draw(poseStack, Component.translatable("gui.dragon_of_berk.monstruous_nightmare_pag.label_hobgobblers"), 19, -4, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.dragon_of_berk.monstruous_nightmare_pag.label_habitat_all_habitats"), 10, 93, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.dragon_of_berk.monstruous_nightmare_pag.label_class_fire"), 9, 105, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.dragon_of_berk.monstruous_nightmare_pag.label_fire_type_propane"), 9, 118, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.dragon_of_berk.monstruous_nightmare_pag.label_fire_type_propane"), 10, 117, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.dragon_of_berk.monstruous_nightmare_pag.label_tamanhopequeno"), 10, 130, -12829636);
 		this.font.draw(poseStack, Component.translatable("gui.dragon_of_berk.monstruous_nightmare_pag.label_length15_meters"), 10, 142, -12829636);
 	}

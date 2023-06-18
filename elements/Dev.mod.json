@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "workin",
+    "texture": "captura_de_tela_2023-06-18_145959",
     "customModelName": "Normal",
-    "name": "Gronkel Iron Mix",
-    "rarity": "COMMON",
+    "name": "Dev",
+    "rarity": "UNCOMMON",
     "creativeTab": {
-      "value": "CUSTOM:DevBuild"
+      "value": "No creative tab entry"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -24,7 +24,10 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
+    "specialInfo": [
+      "Dev",
+      "Dev"
+    ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,

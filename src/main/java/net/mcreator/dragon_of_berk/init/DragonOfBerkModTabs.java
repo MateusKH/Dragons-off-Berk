@@ -28,8 +28,6 @@ public class DragonOfBerkModTabs {
 		event.registerCreativeModeTab(new ResourceLocation("dragon_of_berk", "dragonsofberkblocks"),
 				builder -> builder.title(Component.translatable("item_group.dragon_of_berk.dragonsofberkblocks")).icon(() -> new ItemStack(DragonOfBerkModBlocks.LIQUIDGRONKELIRON.get())).displayItems((parameters, tabData) -> {
 					tabData.accept(DragonOfBerkModBlocks.GRONKEL_IRON_BLOCK.get().asItem());
-					tabData.accept(DragonOfBerkModBlocks.GRONKELMAGMA.get().asItem());
-					tabData.accept(DragonOfBerkModBlocks.LIQUIDGRONKELIRON.get().asItem());
 					tabData.accept(DragonOfBerkModBlocks.FISHBLOCK.get().asItem());
 					tabData.accept(DragonOfBerkModBlocks.HOBGOBBLERSEGGS.get().asItem());
 					tabData.accept(DragonOfBerkModBlocks.CRACKED_HOBGOBBLERSEGGS.get().asItem());
@@ -38,7 +36,6 @@ public class DragonOfBerkModTabs {
 		);
 		event.registerCreativeModeTab(new ResourceLocation("dragon_of_berk", "dragonsofberktools"),
 				builder -> builder.title(Component.translatable("item_group.dragon_of_berk.dragonsofberktools")).icon(() -> new ItemStack(DragonOfBerkModItems.MACE.get())).displayItems((parameters, tabData) -> {
-					tabData.accept(DragonOfBerkModItems.MACE.get());
 					tabData.accept(DragonOfBerkModItems.BATTLEAXE.get());
 				})
 
@@ -46,16 +43,23 @@ public class DragonOfBerkModTabs {
 		event.registerCreativeModeTab(new ResourceLocation("dragon_of_berk", "dragonofberkitens"),
 				builder -> builder.title(Component.translatable("item_group.dragon_of_berk.dragonofberkitens")).icon(() -> new ItemStack(DragonOfBerkModItems.GRONKELIRONMIX.get())).displayItems((parameters, tabData) -> {
 					tabData.accept(DragonOfBerkModItems.GRONKEL_IRON.get());
-					tabData.accept(DragonOfBerkModItems.GRONKELIRONMIX.get());
-					tabData.accept(DragonOfBerkModItems.GRONKELMAGMASHOVEL.get());
 					tabData.accept(DragonOfBerkModItems.GRONKELIRONNUGGET.get());
 					tabData.accept(DragonOfBerkModItems.BOOKOFDRAGONS.get());
+					tabData.accept(DragonOfBerkModItems.NIGHT_FURY_SCALE_ARMOR_HELMET.get());
+					tabData.accept(DragonOfBerkModItems.NIGHT_FURY_SCALE_ARMOR_CHESTPLATE.get());
+					tabData.accept(DragonOfBerkModItems.NIGHT_FURY_SCALE_ARMOR_LEGGINGS.get());
+					tabData.accept(DragonOfBerkModItems.NIGHT_FURY_SCALE_ARMOR_BOOTS.get());
 				})
 
 		);
-		event.registerCreativeModeTab(new ResourceLocation("dragon_of_berk", "dragonsofberkdragons"),
-				builder -> builder.title(Component.translatable("item_group.dragon_of_berk.dragonsofberkdragons")).icon(() -> new ItemStack(DragonOfBerkModItems.HOBGOBBLERS_SPAWN_EGG.get())).displayItems((parameters, tabData) -> {
+		event.registerCreativeModeTab(new ResourceLocation("dragon_of_berk", "dev_build"),
+				builder -> builder.title(Component.translatable("item_group.dragon_of_berk.dev_build")).icon(() -> new ItemStack(DragonOfBerkModItems.DEV.get())).displayItems((parameters, tabData) -> {
+					tabData.accept(DragonOfBerkModBlocks.GRONKELMAGMA.get().asItem());
+					tabData.accept(DragonOfBerkModItems.GRONKELIRONMIX.get());
+					tabData.accept(DragonOfBerkModItems.GRONKELMAGMASHOVEL.get());
+					tabData.accept(DragonOfBerkModBlocks.LIQUIDGRONKELIRON.get().asItem());
 					tabData.accept(DragonOfBerkModItems.GRONKEL_SPAWN_EGG.get());
+					tabData.accept(DragonOfBerkModItems.MACE.get());
 				})
 
 		);

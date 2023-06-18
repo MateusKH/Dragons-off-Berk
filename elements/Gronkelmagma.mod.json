@@ -40,7 +40,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Dragonsofberkblocks"
+      "value": "CUSTOM:DevBuild"
     },
     "destroyTool": "Not specified",
     "customDrop": {
