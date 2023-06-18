@@ -7,7 +7,6 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
-import net.mcreator.dragon_of_berk.init.DragonOfBerkModTabs;
 import net.mcreator.dragon_of_berk.init.DragonOfBerkModItems;
 
 public class MaceItem extends SwordItem {
@@ -36,6 +35,6 @@ public class MaceItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(DragonOfBerkModItems.GRONKEL_IRON.get()));
 			}
-		}, 3, -3f, new Item.Properties().tab(DragonOfBerkModTabs.TAB_DRAGONSOFBERKTOOLS));
+		}, 3, -3f, new Item.Properties());
 	}
 }

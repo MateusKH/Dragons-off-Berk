@@ -16,7 +16,7 @@ import net.mcreator.dragon_of_berk.client.renderer.GronkelRenderer;
 public class DragonOfBerkModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-		event.registerEntityRenderer(DragonOfBerkModEntities.HOBGOBBLERS.get(), PapaTudoRenderer::new);
 		event.registerEntityRenderer(DragonOfBerkModEntities.GRONKEL.get(), GronkelRenderer::new);
+		event.registerEntityRenderer(DragonOfBerkModEntities.PAPA_TUDO.get(), PapaTudoRenderer::new);
 	}
 }

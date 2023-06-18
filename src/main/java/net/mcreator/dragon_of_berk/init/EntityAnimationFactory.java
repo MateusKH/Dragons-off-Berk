@@ -12,14 +12,14 @@ public class EntityAnimationFactory {
 	@SubscribeEvent
 	public static void onEntityTick(LivingEvent.LivingTickEvent event) {
 		if (event != null && event.getEntity() != null) {
-			if (event.getEntity() instanceof PapaTudoEntity syncable) {
+			if (event.getEntity() instanceof GronkelEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");
 					syncable.animationprocedure = animation;
 				}
 			}
-			if (event.getEntity() instanceof GronkelEntity syncable) {
+			if (event.getEntity() instanceof PapaTudoEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

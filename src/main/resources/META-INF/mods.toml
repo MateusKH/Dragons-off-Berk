@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[43,)"
+loaderVersion="[45,)"
 license="Academic Free License v3.0"
 
 [[mods]]
@@ -13,14 +13,14 @@ authors="MCreator"
 [[dependencies.dragon_of_berk]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.2]"
+    versionRange="[1.19.4]"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.dragon_of_berk]]
     modId="forge"
     mandatory=true
-    versionRange="[43.2.0]"
+    versionRange="[45.1.0]"
     ordering="NONE"
     side="BOTH"
 

@@ -7,6 +7,6 @@ import net.mcreator.dragon_of_berk.init.DragonOfBerkModBlocks;
 
 public class CrackedHobgobblerseggsEntityWalksOnTheBlockProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		world.setBlock(new BlockPos(x, y, z), DragonOfBerkModBlocks.CRACKED_HOBGOBBLERSEGGS.get().defaultBlockState(), 3);
+		world.setBlock(BlockPos.containing(x, y, z), DragonOfBerkModBlocks.CRACKED_HOBGOBBLERSEGGS.get().defaultBlockState(), 3);
 	}
 }

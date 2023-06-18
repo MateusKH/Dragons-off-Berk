@@ -7,7 +7,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.AxeItem;
 
-import net.mcreator.dragon_of_berk.init.DragonOfBerkModTabs;
 import net.mcreator.dragon_of_berk.init.DragonOfBerkModItems;
 
 public class BattleaxeItem extends AxeItem {
@@ -36,6 +35,6 @@ public class BattleaxeItem extends AxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(DragonOfBerkModItems.GRONKEL_IRON.get()));
 			}
-		}, 1, -3f, new Item.Properties().tab(DragonOfBerkModTabs.TAB_DRAGONSOFBERKTOOLS));
+		}, 1, -3f, new Item.Properties());
 	}
 }

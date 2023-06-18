@@ -23,14 +23,14 @@ import net.mcreator.dragon_of_berk.DragonOfBerkMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DragonOfBerkModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, DragonOfBerkMod.MODID);
-	public static final RegistryObject<EntityType<PapaTudoEntity>> HOBGOBBLERS = register("hobgobblers",
-			EntityType.Builder.<PapaTudoEntity>of(PapaTudoEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(20).setUpdateInterval(3).setCustomClientFactory(PapaTudoEntity::new)
-
-					.sized(0.6f, 0.6f));
 	public static final RegistryObject<EntityType<GronkelEntity>> GRONKEL = register("gronkel",
 			EntityType.Builder.<GronkelEntity>of(GronkelEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GronkelEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<PapaTudoEntity>> PAPA_TUDO = register("papa_tudo",
+			EntityType.Builder.<PapaTudoEntity>of(PapaTudoEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(20).setUpdateInterval(3).setCustomClientFactory(PapaTudoEntity::new)
+
+					.sized(0.6f, 0.6f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -39,14 +39,14 @@ public class DragonOfBerkModEntities {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
-			PapaTudoEntity.init();
 			GronkelEntity.init();
+			PapaTudoEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
-		event.put(HOBGOBBLERS.get(), PapaTudoEntity.createAttributes().build());
 		event.put(GRONKEL.get(), GronkelEntity.createAttributes().build());
+		event.put(PAPA_TUDO.get(), PapaTudoEntity.createAttributes().build());
 	}
 }
