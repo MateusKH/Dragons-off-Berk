@@ -31,6 +31,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.dragon_of_berk.init.DragonOfBerkModMenus;
 import net.mcreator.dragon_of_berk.init.DragonOfBerkModItems;
 import net.mcreator.dragon_of_berk.init.DragonOfBerkModEntities;
 import net.mcreator.dragon_of_berk.init.DragonOfBerkModBlocks;
@@ -56,6 +57,8 @@ public class DragonOfBerkMod {
 		DragonOfBerkModBlocks.REGISTRY.register(bus);
 		DragonOfBerkModItems.REGISTRY.register(bus);
 		DragonOfBerkModEntities.REGISTRY.register(bus);
+
+		DragonOfBerkModMenus.REGISTRY.register(bus);
 
 		GeckoLib.initialize();
 	}

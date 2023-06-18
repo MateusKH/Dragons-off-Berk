@@ -1,0 +1,87 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 141,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_hobgobblers",
+          "text": {
+            "fixedValue": "Boulder"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 197,
+          "y": 33
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "pagina.png",
+          "use1Xscale": false,
+          "x": 141,
+          "y": 26
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_terrible_terror",
+          "text": "Gronckle",
+          "onClick": {
+            "name": "GronckleOpen"
+          },
+          "width": 103,
+          "height": 20,
+          "x": 164,
+          "y": 47
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_monstrous_nightmare",
+          "text": "Whispering Death",
+          "onClick": {
+            "name": "WhisperingDeathOpen"
+          },
+          "width": 124,
+          "height": 20,
+          "x": 153,
+          "y": 74
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_seta_1virada",
+          "image": "seta_1virada.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "Pag2seta"
+          },
+          "x": 138,
+          "y": 178
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 141,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_seta",
+          "image": "seta_1.png",
+          "hoveredImage": "seta_1.png",
+          "onClick": {
+            "name": "Pag1seta"
+          },
+          "x": 249,
+          "y": 175
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_hobgobblers",
+          "text": {
+            "fixedValue": "Index"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 204,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "pagina.png",
+          "use1Xscale": false,
+          "x": 141,
+          "y": 26
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_nada3",
+          "image": "stoker.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "StokerOpen"
+          },
+          "x": 162,
+          "y": 45
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_nada31",
+          "image": "boulder.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "BoulderOpen"
+          },
+          "x": 222,
+          "y": 45
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_nada32",
+          "image": "nada3.png",
+          "hoveredImage": "",
+          "x": 162,
+          "y": 98
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_nada33",
+          "image": "nada3.png",
+          "hoveredImage": "",
+          "x": 223,
+          "y": 98
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_nada34",
+          "image": "nada3.png",
+          "hoveredImage": "",
+          "x": 194,
+          "y": 147
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

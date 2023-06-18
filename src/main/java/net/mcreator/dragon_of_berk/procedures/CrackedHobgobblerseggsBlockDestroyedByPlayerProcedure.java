@@ -14,7 +14,7 @@ public class CrackedHobgobblerseggsBlockDestroyedByPlayerProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		world.destroyBlock(BlockPos.containing(x, y, z), false);
 		if (world instanceof ServerLevel _level) {
-			Entity entityToSpawn = new PapaTudoEntity(DragonOfBerkModEntities.PAPA_TUDO.get(), _level);
+			Entity entityToSpawn = new PapaTudoEntity(DragonOfBerkModEntities.HOBGOBBLERS.get(), _level);
 			entityToSpawn.moveTo(x, y, z, 0, 0);
 			entityToSpawn.setYBodyRot(0);
 			entityToSpawn.setYHeadRot(0);

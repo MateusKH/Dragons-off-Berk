@@ -19,7 +19,7 @@ public class DragonOfBerkModTabs {
 	public static void buildTabContentsVanilla(CreativeModeTabEvent.BuildContents tabData) {
 
 		if (tabData.getTab() == CreativeModeTabs.SPAWN_EGGS) {
-			tabData.accept(DragonOfBerkModItems.PAPA_TUDO_SPAWN_EGG.get());
+			tabData.accept(DragonOfBerkModItems.HOBGOBBLERS_SPAWN_EGG.get());
 		}
 	}
 
@@ -49,11 +49,12 @@ public class DragonOfBerkModTabs {
 					tabData.accept(DragonOfBerkModItems.GRONKELIRONMIX.get());
 					tabData.accept(DragonOfBerkModItems.GRONKELMAGMASHOVEL.get());
 					tabData.accept(DragonOfBerkModItems.GRONKELIRONNUGGET.get());
+					tabData.accept(DragonOfBerkModItems.BOOKOFDRAGONS.get());
 				})
 
 		);
 		event.registerCreativeModeTab(new ResourceLocation("dragon_of_berk", "dragonsofberkdragons"),
-				builder -> builder.title(Component.translatable("item_group.dragon_of_berk.dragonsofberkdragons")).icon(() -> new ItemStack(DragonOfBerkModItems.PAPA_TUDO_SPAWN_EGG.get())).displayItems((parameters, tabData) -> {
+				builder -> builder.title(Component.translatable("item_group.dragon_of_berk.dragonsofberkdragons")).icon(() -> new ItemStack(DragonOfBerkModItems.HOBGOBBLERS_SPAWN_EGG.get())).displayItems((parameters, tabData) -> {
 					tabData.accept(DragonOfBerkModItems.GRONKEL_SPAWN_EGG.get());
 				})
 

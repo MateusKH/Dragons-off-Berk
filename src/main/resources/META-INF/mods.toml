@@ -1,14 +1,14 @@
 modLoader="javafml"
 loaderVersion="[45,)"
-license="Academic Free License v3.0"
+license="All Rights Reserved"
 
 [[mods]]
 modId="dragon_of_berk"
 version="1.0.0"
 displayName="Dragon of Berk"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
+credits="https://discord.gg/KamrrKsM"
 displayURL="https://mcreator.net"
-authors="MCreator"
+authors="by: ZGAMERPLEY, BEN 10000, Caiobb26 and Mateus KhMCreator"
 
 [[dependencies.dragon_of_berk]]
     modId="minecraft"
