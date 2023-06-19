@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "dragon_of_berk:gronkel_iron_block"
+    "dragon_of_berk:gronkel_iron_block",
+    "dragon_of_berk:block_m_dev"
   ]
 }

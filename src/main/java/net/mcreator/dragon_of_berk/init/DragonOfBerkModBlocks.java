@@ -16,6 +16,7 @@ import net.mcreator.dragon_of_berk.block.GronkelmagmaBlock;
 import net.mcreator.dragon_of_berk.block.GronkelIronBlockBlock;
 import net.mcreator.dragon_of_berk.block.FishblockBlock;
 import net.mcreator.dragon_of_berk.block.CrackedHobgobblerseggsBlock;
+import net.mcreator.dragon_of_berk.block.BlockMDevBlock;
 import net.mcreator.dragon_of_berk.DragonOfBerkMod;
 
 public class DragonOfBerkModBlocks {
@@ -26,4 +27,5 @@ public class DragonOfBerkModBlocks {
 	public static final RegistryObject<Block> FISHBLOCK = REGISTRY.register("fishblock", () -> new FishblockBlock());
 	public static final RegistryObject<Block> HOBGOBBLERSEGGS = REGISTRY.register("hobgobblerseggs", () -> new HobgobblerseggsBlock());
 	public static final RegistryObject<Block> CRACKED_HOBGOBBLERSEGGS = REGISTRY.register("cracked_hobgobblerseggs", () -> new CrackedHobgobblerseggsBlock());
+	public static final RegistryObject<Block> BLOCK_M_DEV = REGISTRY.register("block_m_dev", () -> new BlockMDevBlock());
 }

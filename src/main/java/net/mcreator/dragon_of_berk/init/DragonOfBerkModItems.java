@@ -46,6 +46,7 @@ public class DragonOfBerkModItems {
 	public static final RegistryObject<Item> NIGHT_FURY_SCALE_ARMOR_LEGGINGS = REGISTRY.register("night_fury_scale_armor_leggings", () -> new NightFuryScaleArmorItem.Leggings());
 	public static final RegistryObject<Item> NIGHT_FURY_SCALE_ARMOR_BOOTS = REGISTRY.register("night_fury_scale_armor_boots", () -> new NightFuryScaleArmorItem.Boots());
 	public static final RegistryObject<Item> DEV = REGISTRY.register("dev", () -> new DevItem());
+	public static final RegistryObject<Item> BLOCK_M_DEV = block(DragonOfBerkModBlocks.BLOCK_M_DEV);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

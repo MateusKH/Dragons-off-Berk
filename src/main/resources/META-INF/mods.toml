@@ -24,12 +24,6 @@ authors="by: ZGAMERPLEY, BEN 10000, Caiobb26 and DG MateusMCreator"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.dragon_of_berk]]
-    modId="Curios API"
-    mandatory=true
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 
 [[dependencies.dragon_of_berk]]
     modId="Geckolib API"

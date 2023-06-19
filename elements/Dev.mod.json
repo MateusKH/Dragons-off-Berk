@@ -8,7 +8,7 @@
     "name": "Dev",
     "rarity": "UNCOMMON",
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:DevBuild"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -32,6 +32,9 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedOnBlock": {
+      "name": "DevQuandoClicado"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

@@ -60,6 +60,8 @@ public class DragonOfBerkModTabs {
 					tabData.accept(DragonOfBerkModBlocks.LIQUIDGRONKELIRON.get().asItem());
 					tabData.accept(DragonOfBerkModItems.GRONKEL_SPAWN_EGG.get());
 					tabData.accept(DragonOfBerkModItems.MACE.get());
+					tabData.accept(DragonOfBerkModItems.DEV.get());
+					tabData.accept(DragonOfBerkModBlocks.BLOCK_M_DEV.get().asItem());
 				})
 
 		);

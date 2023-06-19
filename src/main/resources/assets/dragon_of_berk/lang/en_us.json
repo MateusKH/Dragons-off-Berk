@@ -1,7 +1,7 @@
 {
   "itemGroup.tabdragonsofberkblocks": "Dragons Of Berk Blocks",
-  "item_group.dragon_of_berk.dragonsofberkblocks": "Dragons Of Berk Blocks",
   "block.dragon_of_berk.fishblock": "Fish Block",
+  "item_group.dragon_of_berk.dragonsofberkblocks": "Dragons Of Berk Blocks",
   "gui.dragon_of_berk.terrible_terror_pag.label_class_fire": "Class:Stoker",
   "itemGroup.tabdragonofberkitens": "Dragons Of Berk Itens",
   "gui.dragon_of_berk.terrible_terror_pag.label_hobgobblers": "Terrible Terror",
@@ -49,6 +49,7 @@
   "item.dragon_of_berk.gronkel_spawn_egg": "Gronkel Spawn Egg",
   "item.dragon_of_berk.papa_tudo_spawn_egg": "Papa Tudo Spawn Egg",
   "gui.dragon_of_berk.stoker_class.button_terrible_terror": " Terrible Terror ",
+  "block.dragon_of_berk.block_m_dev": "Block M Dev",
   "gui.dragon_of_berk.gronckle_pag.label_hobgobblers": "Gronckle",
   "gui.dragon_of_berk.monstruous_nightmare_pag.label_length15_meters": "Length:21,5 Meters",
   "gui.dragon_of_berk.monstruous_nightmare_pag.label_class_fire": "Class:Stoker",

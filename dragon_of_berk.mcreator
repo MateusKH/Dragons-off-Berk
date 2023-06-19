@@ -1035,6 +1035,90 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "BlockMDev",
+      "type": "block",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_m_dev",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dragon_of_berk/models/item/block_m_dev.json",
+          "src/main/resources/assets/dragon_of_berk/blockstates/block_m_dev.json",
+          "src/main/java/net/mcreator/dragon_of_berk/block/BlockMDevBlock.java",
+          "src/main/resources/assets/dragon_of_berk/models/block/block_m_dev.json"
+        ]
+      },
+      "path": "~/DEV Project"
+    },
+    {
+      "name": "BlockMDevADD",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_m_dev_add",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/procedures/BlockMDevADDProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/DEV Project"
+    },
+    {
+      "name": "DevQuandoClicado",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_quando_clicado",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/procedures/DevQuandoClicadoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1042,8 +1126,8 @@
   "language_map": {
     "en_us": {
       "itemGroup.tabdragonsofberkblocks": "Dragons Of Berk Blocks",
-      "item_group.dragon_of_berk.dragonsofberkblocks": "Dragons Of Berk Blocks",
       "block.dragon_of_berk.fishblock": "Fish Block",
+      "item_group.dragon_of_berk.dragonsofberkblocks": "Dragons Of Berk Blocks",
       "gui.dragon_of_berk.terrible_terror_pag.label_class_fire": "Class:Stoker",
       "itemGroup.tabdragonofberkitens": "Dragons Of Berk Itens",
       "gui.dragon_of_berk.terrible_terror_pag.label_hobgobblers": "Terrible Terror",
@@ -1091,6 +1175,7 @@
       "item.dragon_of_berk.gronkel_spawn_egg": "Gronkel Spawn Egg",
       "item.dragon_of_berk.papa_tudo_spawn_egg": "Papa Tudo Spawn Egg",
       "gui.dragon_of_berk.stoker_class.button_terrible_terror": " Terrible Terror ",
+      "block.dragon_of_berk.block_m_dev": "Block M Dev",
       "gui.dragon_of_berk.gronckle_pag.label_hobgobblers": "Gronckle",
       "gui.dragon_of_berk.monstruous_nightmare_pag.label_length15_meters": "Length:21,5 Meters",
       "gui.dragon_of_berk.monstruous_nightmare_pag.label_class_fire": "Class:Stoker",
@@ -1162,6 +1247,10 @@
       {
         "name": "Armor",
         "children": []
+      },
+      {
+        "name": "DEV Project",
+        "children": []
       }
     ]
   },
@@ -1174,9 +1263,7 @@
     "license": "All Rights Reserved",
     "disableForgeVersionCheck": false,
     "serverSideOnly": false,
-    "requiredMods": [
-      "Curios API"
-    ],
+    "requiredMods": [],
     "dependencies": [
       "Geckolib API"
     ],
@@ -1190,5 +1277,5 @@
     "modElementsPackage": "net.mcreator.dragon_of_berk",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202300223515
+  "mcreatorVersion": 202300224119
 }
