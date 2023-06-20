@@ -95,7 +95,7 @@ public class Pag2Screen extends AbstractContainerScreen<Pag2Menu> {
 		});
 		guistate.put("button:imagebutton_nada31", imagebutton_nada31);
 		this.addRenderableWidget(imagebutton_nada31);
-		imagebutton_seta_1virada = new ImageButton(this.leftPos + -2, this.topPos + 138, 35, 33, 0, 0, 33, new ResourceLocation("dragon_of_berk:textures/screens/atlas/imagebutton_seta_1virada.png"), 35, 66, e -> {
+		imagebutton_seta_1virada = new ImageButton(this.leftPos + 16, this.topPos + 142, 18, 10, 0, 0, 10, new ResourceLocation("dragon_of_berk:textures/screens/atlas/imagebutton_seta_1virada.png"), 18, 20, e -> {
 			if (true) {
 				DragonOfBerkMod.PACKET_HANDLER.sendToServer(new Pag2ButtonMessage(2, x, y, z));
 				Pag2ButtonMessage.handleButtonAction(entity, 2, x, y, z);

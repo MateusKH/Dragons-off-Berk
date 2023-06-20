@@ -24,9 +24,7 @@ import net.mcreator.dragon_of_berk.DragonOfBerkMod;
 public class DragonOfBerkModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, DragonOfBerkMod.MODID);
 	public static final RegistryObject<EntityType<PapaTudoEntity>> HOBGOBBLERS = register("hobgobblers",
-			EntityType.Builder.<PapaTudoEntity>of(PapaTudoEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(20).setUpdateInterval(3).setCustomClientFactory(PapaTudoEntity::new)
-
-					.sized(0.6f, 0.6f));
+			EntityType.Builder.<PapaTudoEntity>of(PapaTudoEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(20).setUpdateInterval(3).setCustomClientFactory(PapaTudoEntity::new).fireImmune().sized(0.6f, 0.6f));
 	public static final RegistryObject<EntityType<GronkelEntity>> GRONKEL = register("gronkel",
 			EntityType.Builder.<GronkelEntity>of(GronkelEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GronkelEntity::new)
 

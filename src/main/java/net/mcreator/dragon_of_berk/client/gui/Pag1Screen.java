@@ -90,7 +90,7 @@ public class Pag1Screen extends AbstractContainerScreen<Pag1Menu> {
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_seta = new ImageButton(this.leftPos + 106, this.topPos + 138, 35, 33, 0, 0, 33, new ResourceLocation("dragon_of_berk:textures/screens/atlas/imagebutton_seta.png"), 35, 66, e -> {
+		imagebutton_seta = new ImageButton(this.leftPos + 106, this.topPos + 142, 18, 10, 0, 0, 10, new ResourceLocation("dragon_of_berk:textures/screens/atlas/imagebutton_seta.png"), 18, 20, e -> {
 			if (true) {
 				DragonOfBerkMod.PACKET_HANDLER.sendToServer(new Pag1ButtonMessage(0, x, y, z));
 				Pag1ButtonMessage.handleButtonAction(entity, 0, x, y, z);

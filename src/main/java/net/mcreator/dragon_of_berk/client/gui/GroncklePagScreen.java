@@ -74,12 +74,12 @@ public class GroncklePagScreen extends AbstractContainerScreen<GroncklePagMenu> 
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.dragon_of_berk.gronckle_pag.label_hobgobblers"), 52, -4, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.dragon_of_berk.gronckle_pag.label_habitat_all_habitats"), 10, 93, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.dragon_of_berk.gronckle_pag.label_class_fire"), 9, 105, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.dragon_of_berk.gronckle_pag.label_fire_type_propane"), 9, 118, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.dragon_of_berk.gronckle_pag.label_tamanhopequeno"), 10, 130, -12829636);
-		this.font.draw(poseStack, Component.translatable("gui.dragon_of_berk.gronckle_pag.label_length15_meters"), 10, 142, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.dragon_of_berk.gronckle_pag.label_hobgobblers"), 52, -2, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.dragon_of_berk.gronckle_pag.label_habitat_all_habitats"), 16, 88, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.dragon_of_berk.gronckle_pag.label_class_fire"), 16, 97, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.dragon_of_berk.gronckle_pag.label_fire_type_propane"), 16, 106, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.dragon_of_berk.gronckle_pag.label_tamanhopequeno"), 16, 115, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.dragon_of_berk.gronckle_pag.label_length15_meters"), 16, 124, -12829636);
 	}
 
 	@Override
@@ -90,7 +90,7 @@ public class GroncklePagScreen extends AbstractContainerScreen<GroncklePagMenu> 
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_seta_1virada = new ImageButton(this.leftPos + -5, this.topPos + 141, 35, 33, 0, 0, 33, new ResourceLocation("dragon_of_berk:textures/screens/atlas/imagebutton_seta_1virada.png"), 35, 66, e -> {
+		imagebutton_seta_1virada = new ImageButton(this.leftPos + 16, this.topPos + 142, 18, 10, 0, 0, 10, new ResourceLocation("dragon_of_berk:textures/screens/atlas/imagebutton_seta_1virada.png"), 18, 20, e -> {
 			if (true) {
 				DragonOfBerkMod.PACKET_HANDLER.sendToServer(new GroncklePagButtonMessage(0, x, y, z));
 				GroncklePagButtonMessage.handleButtonAction(entity, 0, x, y, z);

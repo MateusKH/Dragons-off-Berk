@@ -14,13 +14,13 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_seta",
-          "image": "seta_1.png",
-          "hoveredImage": "seta_1.png",
+          "image": "seta_0002.png",
+          "hoveredImage": "seta_0001.png",
           "onClick": {
             "name": "Pag1seta"
           },
           "x": 249,
-          "y": 175
+          "y": 179
         }
       },
       {
@@ -109,7 +109,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }

@@ -66,13 +66,13 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_seta_1virada",
-          "image": "seta_1virada.png",
-          "hoveredImage": "",
+          "image": "seta_001.png",
+          "hoveredImage": "seta_002.png",
           "onClick": {
             "name": "Pag2seta"
           },
-          "x": 138,
-          "y": 178
+          "x": 159,
+          "y": 179
         }
       }
     ],

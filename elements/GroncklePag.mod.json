@@ -11,6 +11,19 @@
     "doesPauseGame": false,
     "components": [
       {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_seta_1virada",
+          "image": "seta_001.png",
+          "hoveredImage": "seta_002.png",
+          "onClick": {
+            "name": "BoulderOpen"
+          },
+          "x": 159,
+          "y": 179
+        }
+      },
+      {
         "type": "label",
         "data": {
           "name": "label_hobgobblers",
@@ -22,7 +35,7 @@
             "falpha": 0.0
           },
           "x": 195,
-          "y": 33
+          "y": 35
         }
       },
       {
@@ -32,19 +45,6 @@
           "use1Xscale": false,
           "x": 141,
           "y": 26
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_seta_1virada",
-          "image": "seta_1virada.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "BoulderOpen"
-          },
-          "x": 138,
-          "y": 178
         }
       },
       {
@@ -58,8 +58,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 153,
-          "y": 130
+          "x": 159,
+          "y": 125
         }
       },
       {
@@ -73,8 +73,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 152,
-          "y": 142
+          "x": 159,
+          "y": 134
         }
       },
       {
@@ -88,8 +88,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 152,
-          "y": 155
+          "x": 159,
+          "y": 143
         }
       },
       {
@@ -103,8 +103,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 153,
-          "y": 167
+          "x": 159,
+          "y": 152
         }
       },
       {
@@ -118,8 +118,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 153,
-          "y": 179
+          "x": 159,
+          "y": 161
         }
       }
     ],

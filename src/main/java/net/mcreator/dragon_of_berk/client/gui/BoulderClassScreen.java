@@ -104,7 +104,7 @@ public class BoulderClassScreen extends AbstractContainerScreen<BoulderClassMenu
 		}).bounds(this.leftPos + 10, this.topPos + 37, 124, 20).build();
 		guistate.put("button:button_monstrous_nightmare", button_monstrous_nightmare);
 		this.addRenderableWidget(button_monstrous_nightmare);
-		imagebutton_seta_1virada = new ImageButton(this.leftPos + -5, this.topPos + 141, 35, 33, 0, 0, 33, new ResourceLocation("dragon_of_berk:textures/screens/atlas/imagebutton_seta_1virada.png"), 35, 66, e -> {
+		imagebutton_seta_1virada = new ImageButton(this.leftPos + 16, this.topPos + 142, 18, 10, 0, 0, 10, new ResourceLocation("dragon_of_berk:textures/screens/atlas/imagebutton_seta_1virada.png"), 18, 20, e -> {
 			if (true) {
 				DragonOfBerkMod.PACKET_HANDLER.sendToServer(new BoulderClassButtonMessage(2, x, y, z));
 				BoulderClassButtonMessage.handleButtonAction(entity, 2, x, y, z);
