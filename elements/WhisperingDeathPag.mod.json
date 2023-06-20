@@ -7,7 +7,7 @@
     "height": 166,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
-    "renderBgLayer": true,
+    "renderBgLayer": false,
     "doesPauseGame": false,
     "components": [
       {
@@ -38,8 +38,8 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_seta_1virada",
-          "image": "seta_001.png",
-          "hoveredImage": "seta_002.png",
+          "image": "Seta 001.png",
+          "hoveredImage": "Seta 002.png",
           "onClick": {
             "name": "BoulderOpen"
           },

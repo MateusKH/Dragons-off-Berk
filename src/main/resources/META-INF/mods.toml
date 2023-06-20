@@ -8,7 +8,7 @@ version="1.0.0"
 displayName="Dragon of Berk"
 credits="https://discord.gg/KamrrKsM"
 displayURL="https://mcreator.net"
-authors="by: ZGAMERPLEY, BEN 10000, Caiobb26 and DG MateusMCreator"
+authors="by: ZGAMERPLEY, BEN 10000, Caiobb26 and DG Mateus MCreator"
 
 [[dependencies.dragon_of_berk]]
     modId="minecraft"
@@ -26,12 +26,6 @@ authors="by: ZGAMERPLEY, BEN 10000, Caiobb26 and DG MateusMCreator"
 
 
 [[dependencies.dragon_of_berk]]
-    modId="Geckolib API"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
-[[dependencies.dragon_of_berk]]
     modId="curios_api"
     mandatory=false
     versionRange="[0,)"
@@ -39,6 +33,12 @@ authors="by: ZGAMERPLEY, BEN 10000, Caiobb26 and DG MateusMCreator"
     side="BOTH"
 [[dependencies.dragon_of_berk]]
     modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.dragon_of_berk]]
+    modId="playeranimator"
     mandatory=false
     versionRange="[0,)"
     ordering="NONE"

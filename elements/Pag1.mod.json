@@ -7,15 +7,15 @@
     "height": 166,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
-    "renderBgLayer": true,
+    "renderBgLayer": false,
     "doesPauseGame": false,
     "components": [
       {
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_seta",
-          "image": "seta_0002.png",
-          "hoveredImage": "seta_0001.png",
+          "image": "Seta 0002.png",
+          "hoveredImage": "Seta 0001.png",
           "onClick": {
             "name": "Pag1seta"
           },
@@ -52,7 +52,7 @@
         "data": {
           "name": "imagebutton_nada3",
           "image": "stoker.png",
-          "hoveredImage": "",
+          "hoveredImage": "stoker_1.png",
           "onClick": {
             "name": "StokerOpen"
           },
@@ -65,12 +65,12 @@
         "data": {
           "name": "imagebutton_nada31",
           "image": "boulder.png",
-          "hoveredImage": "",
+          "hoveredImage": "boulder_1.png",
           "onClick": {
             "name": "BoulderOpen"
           },
           "x": 222,
-          "y": 45
+          "y": 44
         }
       },
       {

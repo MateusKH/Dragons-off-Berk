@@ -1119,6 +1119,26 @@
           }
         ]
       }
+    },
+    {
+      "name": "NightFuryScaleEquip",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "night_fury_scale_equip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/procedures/NightFuryScaleEquipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor/Procedure Armor"
     }
   ],
   "variable_elements": [],
@@ -1126,8 +1146,8 @@
   "language_map": {
     "en_us": {
       "itemGroup.tabdragonsofberkblocks": "Dragons Of Berk Blocks",
-      "block.dragon_of_berk.fishblock": "Fish Block",
       "item_group.dragon_of_berk.dragonsofberkblocks": "Dragons Of Berk Blocks",
+      "block.dragon_of_berk.fishblock": "Fish Block",
       "gui.dragon_of_berk.terrible_terror_pag.label_class_fire": "Class:Stoker",
       "itemGroup.tabdragonofberkitens": "Dragons Of Berk Itens",
       "gui.dragon_of_berk.terrible_terror_pag.label_hobgobblers": "Terrible Terror",
@@ -1246,7 +1266,12 @@
       },
       {
         "name": "Armor",
-        "children": []
+        "children": [
+          {
+            "name": "Procedure Armor",
+            "children": []
+          }
+        ]
       },
       {
         "name": "DEV Project",
@@ -1258,19 +1283,18 @@
     "modid": "dragon_of_berk",
     "modName": "Dragon of Berk",
     "version": "1.0.0",
-    "author": "by: ZGAMERPLEY, BEN 10000, Caiobb26 and DG MateusMCreator",
+    "author": "by: ZGAMERPLEY, BEN 10000, Caiobb26 and DG Mateus MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "All Rights Reserved",
     "disableForgeVersionCheck": false,
     "serverSideOnly": false,
     "requiredMods": [],
-    "dependencies": [
-      "Geckolib API"
-    ],
+    "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
       "curios_api",
-      "geckolib"
+      "geckolib",
+      "playeranimator"
     ],
     "currentGenerator": "forge-1.19.4",
     "credits": "https://discord.gg/KamrrKsM",

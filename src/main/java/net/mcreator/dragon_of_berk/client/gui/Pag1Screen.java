@@ -40,8 +40,6 @@ public class Pag1Screen extends AbstractContainerScreen<Pag1Menu> {
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("dragon_of_berk:textures/screens/pag_1.png");
-
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(ms);
@@ -54,8 +52,6 @@ public class Pag1Screen extends AbstractContainerScreen<Pag1Menu> {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		RenderSystem.setShaderTexture(0, texture);
-		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("dragon_of_berk:textures/screens/pagina.png"));
 		this.blit(ms, this.leftPos + -2, this.topPos + -11, 0, 0, 146, 180, 146, 180);
@@ -106,7 +102,7 @@ public class Pag1Screen extends AbstractContainerScreen<Pag1Menu> {
 		});
 		guistate.put("button:imagebutton_nada3", imagebutton_nada3);
 		this.addRenderableWidget(imagebutton_nada3);
-		imagebutton_nada31 = new ImageButton(this.leftPos + 79, this.topPos + 8, 48, 48, 0, 0, 48, new ResourceLocation("dragon_of_berk:textures/screens/atlas/imagebutton_nada31.png"), 48, 96, e -> {
+		imagebutton_nada31 = new ImageButton(this.leftPos + 79, this.topPos + 7, 48, 48, 0, 0, 48, new ResourceLocation("dragon_of_berk:textures/screens/atlas/imagebutton_nada31.png"), 48, 96, e -> {
 			if (true) {
 				DragonOfBerkMod.PACKET_HANDLER.sendToServer(new Pag1ButtonMessage(2, x, y, z));
 				Pag1ButtonMessage.handleButtonAction(entity, 2, x, y, z);
