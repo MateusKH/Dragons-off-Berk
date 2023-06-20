@@ -1139,6 +1139,20 @@
         ]
       },
       "path": "~/Armor/Procedure Armor"
+    },
+    {
+      "name": "MMM",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mmm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/procedures/MMMProcedure.java"
+        ],
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [],
