@@ -62,6 +62,7 @@ public class DragonOfBerkModTabs {
 					tabData.accept(DragonOfBerkModItems.MACE.get());
 					tabData.accept(DragonOfBerkModItems.DEV.get());
 					tabData.accept(DragonOfBerkModBlocks.BLOCK_M_DEV.get().asItem());
+					tabData.accept(DragonOfBerkModItems.BOOK_OF_DRAGONS_A.get());
 				})
 
 		);

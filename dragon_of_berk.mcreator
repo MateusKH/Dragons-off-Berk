@@ -802,6 +802,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -1153,6 +1157,23 @@
         ],
         "dependencies": []
       }
+    },
+    {
+      "name": "BookOfDragonsA",
+      "type": "animateditem",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "book_of_dragons_a",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/item/renderer/BookOfDragonsAItemRenderer.java",
+          "src/main/java/net/mcreator/dragon_of_berk/item/model/BookOfDragonsAItemModel.java",
+          "src/main/java/net/mcreator/dragon_of_berk/item/BookOfDragonsAItem.java",
+          "src/main/resources/assets/dragon_of_berk/models/item/book_of_dragons_a.json"
+        ]
+      },
+      "path": "~/Itens"
     }
   ],
   "variable_elements": [],
@@ -1192,6 +1213,7 @@
       "gui.dragon_of_berk.gronckle_pag.label_length15_meters": "Length:6 Meters",
       "gui.dragon_of_berk.stoker_class.button_monstrous_nightmare": "Monstrous Nightmare",
       "item_group.dragon_of_berk.dragonsofberktools": "Dragons Of Berk Tools",
+      "item.dragon_of_berk.book_of_dragons_a": "Book Of Dragons ",
       "gui.dragon_of_berk.gronckle_pag.label_fire_type_propane": "Fire Type:Lava",
       "gui.dragon_of_berk.monstruous_nightmare_pag.label_tamanhopequeno": "Size:Medium",
       "item.dragon_of_berk.night_fury_scale_armor_helmet": "Night Fury Scale Capacete",

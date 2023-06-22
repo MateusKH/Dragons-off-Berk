@@ -23,7 +23,7 @@ public class BookofdragonsItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		Openpag1Procedure.execute(world, x, y, z, entity);
+		Openpag1Procedure.execute(world, x, y, z, entity, itemstack);
 		return ar;
 	}
 }

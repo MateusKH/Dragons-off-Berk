@@ -3,6 +3,7 @@ package net.mcreator.dragon_of_berk.procedures;
 import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
@@ -14,11 +15,12 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.dragon_of_berk.world.inventory.Pag1Menu;
+import net.mcreator.dragon_of_berk.item.BookOfDragonsAItem;
 
 import io.netty.buffer.Unpooled;
 
 public class Openpag1Procedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		{
@@ -37,5 +39,7 @@ public class Openpag1Procedure {
 				}, _bpos);
 			}
 		}
+		if (itemstack.getItem() instanceof BookOfDragonsAItem)
+			itemstack.getOrCreateTag().putString("geckoAnim", "abrindo2");
 	}
 }

@@ -21,6 +21,7 @@ import net.mcreator.dragon_of_berk.item.GronkelironmixItem;
 import net.mcreator.dragon_of_berk.item.GronkelIronItem;
 import net.mcreator.dragon_of_berk.item.DevItem;
 import net.mcreator.dragon_of_berk.item.BookofdragonsItem;
+import net.mcreator.dragon_of_berk.item.BookOfDragonsAItem;
 import net.mcreator.dragon_of_berk.item.BattleaxeItem;
 import net.mcreator.dragon_of_berk.DragonOfBerkMod;
 
@@ -47,6 +48,7 @@ public class DragonOfBerkModItems {
 	public static final RegistryObject<Item> NIGHT_FURY_SCALE_ARMOR_BOOTS = REGISTRY.register("night_fury_scale_armor_boots", () -> new NightFuryScaleArmorItem.Boots());
 	public static final RegistryObject<Item> DEV = REGISTRY.register("dev", () -> new DevItem());
 	public static final RegistryObject<Item> BLOCK_M_DEV = block(DragonOfBerkModBlocks.BLOCK_M_DEV);
+	public static final RegistryObject<Item> BOOK_OF_DRAGONS_A = REGISTRY.register("book_of_dragons_a", () -> new BookOfDragonsAItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
