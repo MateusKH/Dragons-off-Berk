@@ -13,28 +13,32 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.dragon_of_berk.world.inventory.Pag2Menu;
 import net.mcreator.dragon_of_berk.world.inventory.Pag1Menu;
 
 import io.netty.buffer.Unpooled;
 
-public class Pag2setaProcedure {
+public class Seta2Procedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		{
-			if (entity instanceof ServerPlayer _ent) {
-				BlockPos _bpos = BlockPos.containing(x, y, z);
-				NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
-					@Override
-					public Component getDisplayName() {
-						return Component.literal("Pag1");
-					}
+		if (entity instanceof Player _plr0 && _plr0.containerMenu instanceof Pag1Menu) {
+			entity.getPersistentData().putBoolean("Seta2", true);
+			{
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = BlockPos.containing(x, y, z);
+					NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.literal("Pag2");
+						}
 
-					@Override
-					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-						return new Pag1Menu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
-					}
-				}, _bpos);
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new Pag2Menu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
 			}
 		}
 	}

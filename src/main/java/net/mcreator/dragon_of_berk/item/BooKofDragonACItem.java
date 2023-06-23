@@ -37,8 +37,9 @@ import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.mcreator.dragon_of_berk.world.inventory.Pag1Menu;
 import net.mcreator.dragon_of_berk.procedures.OpenGuiStandartProcedure;
 import net.mcreator.dragon_of_berk.procedures.BookOfDragonsATickProcedure;
-import net.mcreator.dragon_of_berk.item.renderer.BookOfDragonsAItemRenderer;
-import net.mcreator.dragon_of_berk.item.inventory.BookOfDragonsAInventoryCapability;
+import net.mcreator.dragon_of_berk.procedures.BooKofDragonACTickProcedure;
+import net.mcreator.dragon_of_berk.item.renderer.BooKofDragonACItemRenderer;
+import net.mcreator.dragon_of_berk.item.inventory.BooKofDragonACInventoryCapability;
 
 import javax.annotation.Nullable;
 
@@ -46,12 +47,12 @@ import java.util.function.Consumer;
 
 import io.netty.buffer.Unpooled;
 
-public class BookOfDragonsAItem extends Item implements GeoItem {
+public class BooKofDragonACItem extends Item implements GeoItem {
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	public String animationprocedure = "empty";
 	public static ItemDisplayContext transformType;
 
-	public BookOfDragonsAItem() {
+	public BooKofDragonACItem() {
 		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
 	}
 
@@ -59,7 +60,7 @@ public class BookOfDragonsAItem extends Item implements GeoItem {
 	public void initializeClient(Consumer<IClientItemExtensions> consumer) {
 		super.initializeClient(consumer);
 		consumer.accept(new IClientItemExtensions() {
-			private final BlockEntityWithoutLevelRenderer renderer = new BookOfDragonsAItemRenderer();
+			private final BlockEntityWithoutLevelRenderer renderer = new BooKofDragonACItemRenderer();
 
 			@Override
 			public BlockEntityWithoutLevelRenderer getCustomRenderer() {
@@ -142,12 +143,14 @@ public class BookOfDragonsAItem extends Item implements GeoItem {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
+		if (selected)
+			BooKofDragonACTickProcedure.execute(entity, itemstack);
 		BookOfDragonsATickProcedure.execute(world, entity, itemstack);
 	}
 
 	@Override
 	public ICapabilityProvider initCapabilities(ItemStack stack, @Nullable CompoundTag compound) {
-		return new BookOfDragonsAInventoryCapability();
+		return new BooKofDragonACInventoryCapability();
 	}
 
 	@Override

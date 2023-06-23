@@ -11,6 +11,7 @@ import net.minecraft.client.renderer.ItemInHandRenderer;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.dragon_of_berk.item.BookOfDragonsAItem;
+import net.mcreator.dragon_of_berk.item.BooKofDragonACItem;
 
 import java.lang.reflect.Field;
 
@@ -51,11 +52,21 @@ public class ItemAnimationFactory {
 						animatable.animationprocedure = animation;
 						disableUseAnim();
 					}
+				if (event.player.getMainHandItem().getItem() instanceof BooKofDragonACItem animatable)
+					if (event.player.level.isClientSide()) {
+						animatable.animationprocedure = animation;
+						disableUseAnim();
+					}
 			}
 			if (!event.player.getOffhandItem().getOrCreateTag().getString("geckoAnim").equals("") && !(event.player.getOffhandItem().getItem() instanceof ArmorItem)) {
 				animation = event.player.getOffhandItem().getOrCreateTag().getString("geckoAnim");
 				event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
 				if (event.player.getOffhandItem().getItem() instanceof BookOfDragonsAItem animatable)
+					if (event.player.level.isClientSide()) {
+						animatable.animationprocedure = animation;
+						disableUseAnim();
+					}
+				if (event.player.getOffhandItem().getItem() instanceof BooKofDragonACItem animatable)
 					if (event.player.level.isClientSide()) {
 						animatable.animationprocedure = animation;
 						disableUseAnim();

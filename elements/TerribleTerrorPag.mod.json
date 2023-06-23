@@ -41,7 +41,7 @@
           "image": "Seta 001.png",
           "hoveredImage": "Seta 002.png",
           "onClick": {
-            "name": "StokerOpen"
+            "name": "Seta1"
           },
           "x": 159,
           "y": 179

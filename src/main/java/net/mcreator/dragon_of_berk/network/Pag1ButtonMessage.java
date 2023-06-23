@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.dragon_of_berk.world.inventory.Pag1Menu;
 import net.mcreator.dragon_of_berk.procedures.StokerOpenProcedure;
-import net.mcreator.dragon_of_berk.procedures.Pag1setaProcedure;
+import net.mcreator.dragon_of_berk.procedures.Seta2Procedure;
 import net.mcreator.dragon_of_berk.procedures.BoulderOpenProcedure;
 import net.mcreator.dragon_of_berk.DragonOfBerkMod;
 
@@ -66,7 +66,7 @@ public class Pag1ButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			Pag1setaProcedure.execute(world, x, y, z, entity);
+			Seta2Procedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 1) {
 

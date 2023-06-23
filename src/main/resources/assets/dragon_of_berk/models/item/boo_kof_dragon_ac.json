@@ -1,0 +1,6 @@
+{
+  "parent": "dragon_of_berk:displaysettings/livrodragao.item",
+  "textures": {
+    "layer0": "dragon_of_berk:item/livrodragaotexture."
+  }
+}

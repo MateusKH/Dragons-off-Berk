@@ -12,7 +12,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.dragon_of_berk.world.inventory.MonstruousNightmarePagMenu;
-import net.mcreator.dragon_of_berk.procedures.StokerOpenProcedure;
+import net.mcreator.dragon_of_berk.procedures.Seta1Procedure;
 import net.mcreator.dragon_of_berk.DragonOfBerkMod;
 
 import java.util.function.Supplier;
@@ -64,7 +64,7 @@ public class MonstruousNightmarePagButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			StokerOpenProcedure.execute(world, x, y, z, entity);
+			Seta1Procedure.execute(world, x, y, z, entity);
 		}
 	}
 

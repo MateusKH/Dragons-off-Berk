@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.dragon_of_berk.world.inventory.StokerClassMenu;
 import net.mcreator.dragon_of_berk.procedures.TerribleTerrorOpenProcedure;
-import net.mcreator.dragon_of_berk.procedures.Pag2setaProcedure;
+import net.mcreator.dragon_of_berk.procedures.Seta1Procedure;
 import net.mcreator.dragon_of_berk.procedures.MonstruousNightmareOpenProcedure;
 import net.mcreator.dragon_of_berk.DragonOfBerkMod;
 
@@ -74,7 +74,7 @@ public class StokerClassButtonMessage {
 		}
 		if (buttonID == 2) {
 
-			Pag2setaProcedure.execute(world, x, y, z, entity);
+			Seta1Procedure.execute(world, x, y, z, entity);
 		}
 	}
 

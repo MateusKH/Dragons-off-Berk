@@ -17,7 +17,7 @@
           "image": "Seta 0002.png",
           "hoveredImage": "Seta 0001.png",
           "onClick": {
-            "name": "Pag1seta"
+            "name": "Seta2"
           },
           "x": 249,
           "y": 179

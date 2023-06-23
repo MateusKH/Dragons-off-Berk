@@ -667,57 +667,6 @@
       "path": "~/bookofdragons"
     },
     {
-      "name": "Bookofdragons",
-      "type": "item",
-      "sortid": 39,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bookofdragons",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dragon_of_berk/item/BookofdragonsItem.java",
-          "src/main/resources/assets/dragon_of_berk/models/item/bookofdragons.json"
-        ]
-      },
-      "path": "~/Itens"
-    },
-    {
-      "name": "Pag2seta",
-      "type": "procedure",
-      "sortid": 42,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pag_2seta",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dragon_of_berk/procedures/Pag2setaProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/bookofdragons/procedures"
-    },
-    {
       "name": "BoulderClass",
       "type": "gui",
       "sortid": 48,
@@ -764,46 +713,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/bookofdragons/procedures"
-    },
-    {
-      "name": "Openpag1",
-      "type": "procedure",
-      "sortid": 38,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "openpag_1",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dragon_of_berk/procedures/Openpag1Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
           },
           {
             "name": "x",
@@ -935,42 +844,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/dragon_of_berk/procedures/BoulderOpenProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/bookofdragons/procedures"
-    },
-    {
-      "name": "Pag1seta",
-      "type": "procedure",
-      "sortid": 35,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "indextoindex2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dragon_of_berk/procedures/Pag1setaProcedure.java"
         ],
         "dependencies": [
           {
@@ -1145,20 +1018,6 @@
       "path": "~/Armor/Procedure Armor"
     },
     {
-      "name": "MMM",
-      "type": "procedure",
-      "sortid": 63,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mmm",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dragon_of_berk/procedures/MMMProcedure.java"
-        ],
-        "dependencies": []
-      }
-    },
-    {
       "name": "BookOfDragonsA",
       "type": "animateditem",
       "sortid": 64,
@@ -1168,9 +1027,180 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/dragon_of_berk/item/renderer/BookOfDragonsAItemRenderer.java",
+          "src/main/java/net/mcreator/dragon_of_berk/item/inventory/BookOfDragonsAInventoryCapability.java",
           "src/main/java/net/mcreator/dragon_of_berk/item/model/BookOfDragonsAItemModel.java",
           "src/main/java/net/mcreator/dragon_of_berk/item/BookOfDragonsAItem.java",
           "src/main/resources/assets/dragon_of_berk/models/item/book_of_dragons_a.json"
+        ]
+      },
+      "path": "~/Itens"
+    },
+    {
+      "name": "BookOfDragonsATick",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "book_of_dragons_a_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/procedures/BookOfDragonsATickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Itens"
+    },
+    {
+      "name": "OpenGuiStandart",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_gui_standart",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/procedures/OpenGuiStandartProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/bookofdragons/procedures"
+    },
+    {
+      "name": "Seta1",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seta_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/procedures/Seta1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/bookofdragons/procedures"
+    },
+    {
+      "name": "Seta2",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seta_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/procedures/Seta2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/bookofdragons/procedures"
+    },
+    {
+      "name": "BooKofDragonAC",
+      "type": "animateditem",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boo_kof_dragon_ac",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/item/BooKofDragonACItem.java",
+          "src/main/java/net/mcreator/dragon_of_berk/item/renderer/BooKofDragonACItemRenderer.java",
+          "src/main/java/net/mcreator/dragon_of_berk/item/model/BooKofDragonACItemModel.java",
+          "src/main/resources/assets/dragon_of_berk/models/item/boo_kof_dragon_ac.json",
+          "src/main/java/net/mcreator/dragon_of_berk/item/inventory/BooKofDragonACInventoryCapability.java"
+        ]
+      },
+      "path": "~/Itens"
+    },
+    {
+      "name": "BooKofDragonACTick",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boo_kof_dragon_ac_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/procedures/BooKofDragonACTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
         ]
       },
       "path": "~/Itens"
@@ -1212,6 +1242,7 @@
       "item.dragon_of_berk.gronkelironmix": "Gronkel Iron Mix",
       "gui.dragon_of_berk.gronckle_pag.label_length15_meters": "Length:6 Meters",
       "gui.dragon_of_berk.stoker_class.button_monstrous_nightmare": "Monstrous Nightmare",
+      "item.dragon_of_berk.boo_kof_dragon_ac": "Book Of Dragons ",
       "item_group.dragon_of_berk.dragonsofberktools": "Dragons Of Berk Tools",
       "item.dragon_of_berk.book_of_dragons_a": "Book Of Dragons ",
       "gui.dragon_of_berk.gronckle_pag.label_fire_type_propane": "Fire Type:Lava",
@@ -1219,7 +1250,6 @@
       "item.dragon_of_berk.night_fury_scale_armor_helmet": "Night Fury Scale Capacete",
       "block.dragon_of_berk.liquidgronkeliron": "Liquid Gronkel Iron",
       "gui.dragon_of_berk.monstruous_nightmare_pag.label_hobgobblers": "Monstruous Nightmare",
-      "item.dragon_of_berk.bookofdragons": "Book Of Dragons",
       "gui.dragon_of_berk.boulder_class.button_monstrous_nightmare": "Whispering Death",
       "item_group.dragon_of_berk.dragonofberkitens": "Dragons Of Berk Itens",
       "block.dragon_of_berk.gronkel_iron_block": "Block of Gronkel Iron",

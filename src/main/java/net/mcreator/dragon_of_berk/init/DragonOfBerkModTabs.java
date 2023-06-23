@@ -44,7 +44,6 @@ public class DragonOfBerkModTabs {
 				builder -> builder.title(Component.translatable("item_group.dragon_of_berk.dragonofberkitens")).icon(() -> new ItemStack(DragonOfBerkModItems.GRONKELIRONMIX.get())).displayItems((parameters, tabData) -> {
 					tabData.accept(DragonOfBerkModItems.GRONKEL_IRON.get());
 					tabData.accept(DragonOfBerkModItems.GRONKELIRONNUGGET.get());
-					tabData.accept(DragonOfBerkModItems.BOOKOFDRAGONS.get());
 					tabData.accept(DragonOfBerkModItems.NIGHT_FURY_SCALE_ARMOR_HELMET.get());
 					tabData.accept(DragonOfBerkModItems.NIGHT_FURY_SCALE_ARMOR_CHESTPLATE.get());
 					tabData.accept(DragonOfBerkModItems.NIGHT_FURY_SCALE_ARMOR_LEGGINGS.get());
@@ -63,6 +62,7 @@ public class DragonOfBerkModTabs {
 					tabData.accept(DragonOfBerkModItems.DEV.get());
 					tabData.accept(DragonOfBerkModBlocks.BLOCK_M_DEV.get().asItem());
 					tabData.accept(DragonOfBerkModItems.BOOK_OF_DRAGONS_A.get());
+					tabData.accept(DragonOfBerkModItems.BOO_KOF_DRAGON_AC.get());
 				})
 
 		);
