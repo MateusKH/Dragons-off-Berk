@@ -23,7 +23,7 @@ public class Seta2Procedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player _plr0 && _plr0.containerMenu instanceof Pag1Menu) {
-			entity.getPersistentData().putBoolean("Seta2", true);
+			entity.getPersistentData().putBoolean("Folhando", true);
 			{
 				if (entity instanceof ServerPlayer _ent) {
 					BlockPos _bpos = BlockPos.containing(x, y, z);

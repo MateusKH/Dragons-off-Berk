@@ -35,10 +35,7 @@
     "inventorySize": 0,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "OpenGuiStandart"
-    },
-    "onItemInInventoryTick": {
-      "name": "BookOfDragonsATick"
+      "name": "BookDragonQuandoClicado"
     },
     "isFood": false,
     "nutritionalValue": 4,

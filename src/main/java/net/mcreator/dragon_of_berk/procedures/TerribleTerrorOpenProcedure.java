@@ -37,5 +37,6 @@ public class TerribleTerrorOpenProcedure {
 				}, _bpos);
 			}
 		}
+		entity.getPersistentData().putBoolean("Folhando", true);
 	}
 }

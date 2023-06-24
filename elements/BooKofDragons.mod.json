@@ -4,7 +4,7 @@
   "definition": {
     "renderType": 0,
     "texture": "livrodragaotexture.",
-    "name": "Book Of Dragons ",
+    "name": "BooK of Dragons",
     "idle": "idle",
     "rarity": "COMMON",
     "displaySettings": "livrodragao.item.json",
@@ -15,7 +15,7 @@
       "value": "CUSTOM:DevBuild"
     },
     "firstPersonArms": true,
-    "stackSize": 64,
+    "stackSize": 1,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
@@ -31,17 +31,11 @@
     "damageVsEntity": 0.0,
     "specialInfo": [],
     "hasGlow": false,
-    "guiBoundTo": "Pag1",
-    "inventorySize": 0,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onRightClickedInAir": {
-      "name": "OpenGuiStandart"
-    },
-    "onItemInInventoryTick": {
-      "name": "BookOfDragonsATick"
-    },
     "onItemInUseTick": {
-      "name": "BooKofDragonACTick"
+      "name": "BooKofDragonsTickDeQuandoSegurar"
     },
     "isFood": false,
     "nutritionalValue": 4,
@@ -52,6 +46,6 @@
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "none",
-    "normal": "livrodragao.geo.json"
+    "normal": "livrodragao1.geo.json"
   }
 }

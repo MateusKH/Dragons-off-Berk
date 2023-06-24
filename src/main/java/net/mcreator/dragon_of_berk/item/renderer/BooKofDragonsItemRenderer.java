@@ -17,8 +17,8 @@ import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.dragon_of_berk.utils.AnimUtils;
-import net.mcreator.dragon_of_berk.item.model.BooKofDragonACItemModel;
-import net.mcreator.dragon_of_berk.item.BooKofDragonACItem;
+import net.mcreator.dragon_of_berk.item.model.BooKofDragonsItemModel;
+import net.mcreator.dragon_of_berk.item.BooKofDragonsItem;
 
 import java.util.Set;
 import java.util.HashSet;
@@ -26,13 +26,13 @@ import java.util.HashSet;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
-public class BooKofDragonACItemRenderer extends GeoItemRenderer<BooKofDragonACItem> {
-	public BooKofDragonACItemRenderer() {
-		super(new BooKofDragonACItemModel());
+public class BooKofDragonsItemRenderer extends GeoItemRenderer<BooKofDragonsItem> {
+	public BooKofDragonsItemRenderer() {
+		super(new BooKofDragonsItemModel());
 	}
 
 	@Override
-	public RenderType getRenderType(BooKofDragonACItem animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
+	public RenderType getRenderType(BooKofDragonsItem animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
 		return RenderType.entityTranslucent(getTextureLocation(animatable));
 	}
 
@@ -41,7 +41,7 @@ public class BooKofDragonACItemRenderer extends GeoItemRenderer<BooKofDragonACIt
 	protected MultiBufferSource currentBuffer;
 	protected RenderType renderType;
 	public ItemDisplayContext transformType;
-	protected BooKofDragonACItem animatable;
+	protected BooKofDragonsItem animatable;
 	private final Set<String> hiddenBones = new HashSet<>();
 	private final Set<String> suppressedBones = new HashSet<>();
 
@@ -54,7 +54,7 @@ public class BooKofDragonACItemRenderer extends GeoItemRenderer<BooKofDragonACIt
 	}
 
 	@Override
-	public void actuallyRender(PoseStack matrixStackIn, BooKofDragonACItem animatable, BakedGeoModel model, RenderType type, MultiBufferSource renderTypeBuffer, VertexConsumer vertexBuilder, boolean isRenderer, float partialTicks, int packedLightIn,
+	public void actuallyRender(PoseStack matrixStackIn, BooKofDragonsItem animatable, BakedGeoModel model, RenderType type, MultiBufferSource renderTypeBuffer, VertexConsumer vertexBuilder, boolean isRenderer, float partialTicks, int packedLightIn,
 			int packedOverlayIn, float red, float green, float blue, float alpha) {
 		this.currentBuffer = renderTypeBuffer;
 		this.renderType = type;
@@ -66,7 +66,7 @@ public class BooKofDragonACItemRenderer extends GeoItemRenderer<BooKofDragonACIt
 	}
 
 	@Override
-	public void renderRecursively(PoseStack stack, BooKofDragonACItem animatable, GeoBone bone, RenderType type, MultiBufferSource buffer, VertexConsumer bufferIn, boolean isReRender, float partialTick, int packedLightIn, int packedOverlayIn,
+	public void renderRecursively(PoseStack stack, BooKofDragonsItem animatable, GeoBone bone, RenderType type, MultiBufferSource buffer, VertexConsumer bufferIn, boolean isReRender, float partialTick, int packedLightIn, int packedOverlayIn,
 			float red, float green, float blue, float alpha) {
 		Minecraft mc = Minecraft.getInstance();
 		String name = bone.getName();
@@ -107,7 +107,7 @@ public class BooKofDragonACItemRenderer extends GeoItemRenderer<BooKofDragonACIt
 	}
 
 	@Override
-	public ResourceLocation getTextureLocation(BooKofDragonACItem instance) {
+	public ResourceLocation getTextureLocation(BooKofDragonsItem instance) {
 		return super.getTextureLocation(instance);
 	}
 }

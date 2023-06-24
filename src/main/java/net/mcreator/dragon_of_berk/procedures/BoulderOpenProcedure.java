@@ -37,5 +37,6 @@ public class BoulderOpenProcedure {
 				}, _bpos);
 			}
 		}
+		entity.getPersistentData().putBoolean("Folhando", true);
 	}
 }

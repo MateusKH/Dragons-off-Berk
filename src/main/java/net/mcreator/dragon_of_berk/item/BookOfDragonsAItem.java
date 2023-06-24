@@ -24,7 +24,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
@@ -35,8 +34,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 
 import net.mcreator.dragon_of_berk.world.inventory.Pag1Menu;
-import net.mcreator.dragon_of_berk.procedures.OpenGuiStandartProcedure;
-import net.mcreator.dragon_of_berk.procedures.BookOfDragonsATickProcedure;
+import net.mcreator.dragon_of_berk.procedures.BookDragonQuandoClicadoProcedure;
 import net.mcreator.dragon_of_berk.item.renderer.BookOfDragonsAItemRenderer;
 import net.mcreator.dragon_of_berk.item.inventory.BookOfDragonsAInventoryCapability;
 
@@ -135,14 +133,8 @@ public class BookOfDragonsAItem extends Item implements GeoItem {
 			});
 		}
 
-		OpenGuiStandartProcedure.execute(world, entity, itemstack);
+		BookDragonQuandoClicadoProcedure.execute(entity);
 		return ar;
-	}
-
-	@Override
-	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
-		super.inventoryTick(itemstack, world, entity, slot, selected);
-		BookOfDragonsATickProcedure.execute(world, entity, itemstack);
 	}
 
 	@Override

@@ -37,5 +37,6 @@ public class StokerOpenProcedure {
 				}, _bpos);
 			}
 		}
+		entity.getPersistentData().putBoolean("Folhando", true);
 	}
 }

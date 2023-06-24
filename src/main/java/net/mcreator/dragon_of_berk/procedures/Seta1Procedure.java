@@ -45,7 +45,7 @@ public class Seta1Procedure {
 					}, _bpos);
 				}
 			}
-			entity.getPersistentData().putBoolean("Seta1", true);
+			entity.getPersistentData().putBoolean("Folhando", true);
 		}
 		if (entity instanceof Player _plr3 && _plr3.containerMenu instanceof WhisperingDeathPagMenu) {
 			{
@@ -64,7 +64,7 @@ public class Seta1Procedure {
 					}, _bpos);
 				}
 			}
-			entity.getPersistentData().putBoolean("Seta1", true);
+			entity.getPersistentData().putBoolean("Folhando", true);
 		}
 		if (entity instanceof Player _plr6 && _plr6.containerMenu instanceof TerribleTerrorPagMenu) {
 			{
@@ -83,7 +83,7 @@ public class Seta1Procedure {
 					}, _bpos);
 				}
 			}
-			entity.getPersistentData().putBoolean("Seta1", true);
+			entity.getPersistentData().putBoolean("Folhando", true);
 		}
 		if (entity instanceof Player _plr9 && _plr9.containerMenu instanceof MonstruousNightmarePagMenu) {
 			{
@@ -102,7 +102,7 @@ public class Seta1Procedure {
 					}, _bpos);
 				}
 			}
-			entity.getPersistentData().putBoolean("Seta1", true);
+			entity.getPersistentData().putBoolean("Folhando", true);
 		}
 		if (entity instanceof Player _plr12 && _plr12.containerMenu instanceof Pag2Menu) {
 			{
@@ -121,7 +121,7 @@ public class Seta1Procedure {
 					}, _bpos);
 				}
 			}
-			entity.getPersistentData().putBoolean("Seta1", true);
+			entity.getPersistentData().putBoolean("Folhando", true);
 		}
 		if (entity instanceof Player _plr15 && _plr15.containerMenu instanceof StokerClassMenu || entity instanceof Player _plr16 && _plr16.containerMenu instanceof BoulderClassMenu) {
 			{
@@ -140,7 +140,7 @@ public class Seta1Procedure {
 					}, _bpos);
 				}
 			}
-			entity.getPersistentData().putBoolean("Seta1", true);
+			entity.getPersistentData().putBoolean("Folhando", true);
 		}
 	}
 }

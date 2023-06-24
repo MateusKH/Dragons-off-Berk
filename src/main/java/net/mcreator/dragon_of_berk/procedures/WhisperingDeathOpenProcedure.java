@@ -37,5 +37,6 @@ public class WhisperingDeathOpenProcedure {
 				}, _bpos);
 			}
 		}
+		entity.getPersistentData().putBoolean("Folhando", true);
 	}
 }

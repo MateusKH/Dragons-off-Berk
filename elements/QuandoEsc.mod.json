@@ -1,0 +1,12 @@
+{
+  "_fv": 43,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "ESCAPE",
+    "keyBindingName": "Quando Esc",
+    "keyBindingCategoryKey": "ui",
+    "onKeyPressed": {
+      "name": "QuandoEscAoPressionarUmaTecla"
+    }
+  }
+}

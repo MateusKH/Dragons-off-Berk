@@ -37,5 +37,6 @@ public class GronckleOpenProcedure {
 				}, _bpos);
 			}
 		}
+		entity.getPersistentData().putBoolean("Folhando", true);
 	}
 }

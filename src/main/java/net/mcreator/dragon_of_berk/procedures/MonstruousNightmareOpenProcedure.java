@@ -37,5 +37,6 @@ public class MonstruousNightmareOpenProcedure {
 				}, _bpos);
 			}
 		}
+		entity.getPersistentData().putBoolean("Folhando", true);
 	}
 }
