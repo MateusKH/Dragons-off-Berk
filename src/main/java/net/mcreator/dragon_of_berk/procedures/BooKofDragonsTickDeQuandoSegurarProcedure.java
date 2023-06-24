@@ -29,7 +29,7 @@ public class BooKofDragonsTickDeQuandoSegurarProcedure {
 			entity.getPersistentData().putBoolean("Fechando", false);
 			if (itemstack.getItem() instanceof BooKofDragonsItem)
 				itemstack.getOrCreateTag().putString("geckoAnim", "fechando");
-			DragonOfBerkMod.queueServerWork(10, () -> {
+			DragonOfBerkMod.queueServerWork(12, () -> {
 				if (entity instanceof Player _player) {
 					ItemStack _stktoremove = new ItemStack(DragonOfBerkModItems.BOO_KOF_DRAGONS.get());
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());

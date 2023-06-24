@@ -4,7 +4,7 @@
   "definition": {
     "renderType": 0,
     "texture": "livrodragaotexture.",
-    "name": "BooK of Dragons",
+    "name": "Book Of Dragons",
     "idle": "idle",
     "rarity": "COMMON",
     "displaySettings": "livrodragao.item.json",
@@ -12,7 +12,7 @@
     "rightArm": "right",
     "perspective": "First Person",
     "creativeTab": {
-      "value": "CUSTOM:DevBuild"
+      "value": "No creative tab entry"
     },
     "firstPersonArms": true,
     "stackSize": 1,
@@ -32,7 +32,7 @@
     "specialInfo": [],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
-    "inventorySize": 9,
+    "inventorySize": 0,
     "inventoryStackSize": 64,
     "onItemInUseTick": {
       "name": "BooKofDragonsTickDeQuandoSegurar"
