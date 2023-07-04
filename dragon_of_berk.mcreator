@@ -4,7 +4,7 @@
       "name": "PapaTudo",
       "type": "animatedentity",
       "sortid": 5,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "hobgobblers",
       "metadata": {
@@ -146,7 +146,7 @@
       "name": "Gronkel",
       "type": "animatedentity",
       "sortid": 13,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "gronkel",
       "metadata": {
@@ -1004,7 +1004,7 @@
       "name": "BookOfDragonsA",
       "type": "animateditem",
       "sortid": 64,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "book_of_dragons_a",
       "metadata": {
@@ -1142,7 +1142,7 @@
       "name": "BooKofDragons",
       "type": "animateditem",
       "sortid": 76,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "boo_kof_dragons",
       "metadata": {

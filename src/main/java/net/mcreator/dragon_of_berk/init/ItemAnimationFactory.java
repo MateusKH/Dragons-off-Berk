@@ -1,7 +1,5 @@
 package net.mcreator.dragon_of_berk.init;
 
-import software.bernie.geckolib.animatable.GeoItem;
-
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.TickEvent;
