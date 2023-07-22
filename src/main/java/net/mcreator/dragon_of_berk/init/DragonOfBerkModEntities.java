@@ -37,14 +37,10 @@ public class DragonOfBerkModEntities {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
-			PapaTudoEntity.init();
-			GronkelEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
-		event.put(HOBGOBBLERS.get(), PapaTudoEntity.createAttributes().build());
-		event.put(GRONKEL.get(), GronkelEntity.createAttributes().build());
 	}
 }

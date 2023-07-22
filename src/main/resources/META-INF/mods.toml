@@ -25,10 +25,4 @@ authors="by: ZGAMERPLEY, BEN 10000, Caiobb26 and DG Mateus MCreator"
     side="BOTH"
 
 
-[[dependencies.dragon_of_berk]]
-    modId="geckolib"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 
