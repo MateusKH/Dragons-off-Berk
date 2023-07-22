@@ -4,16 +4,16 @@
       "name": "PapaTudo",
       "type": "animatedentity",
       "sortid": 5,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "hobgobblers",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/dragon_of_berk/entity/model/PapaTudoModel.java",
-          "src/main/java/net/mcreator/dragon_of_berk/client/renderer/PapaTudoRenderer.java",
+          "src/main/java/net/mcreator/dragon_of_berk/entity/PapaTudoEntity.java",
           "src/main/resources/data/dragon_of_berk/forge/biome_modifier/hobgobblers_biome_modifier.json",
+          "src/main/java/net/mcreator/dragon_of_berk/entity/model/PapaTudoModel.java",
           "src/main/resources/assets/dragon_of_berk/models/item/hobgobblers_spawn_egg.json",
-          "src/main/java/net/mcreator/dragon_of_berk/entity/PapaTudoEntity.java"
+          "src/main/java/net/mcreator/dragon_of_berk/client/renderer/PapaTudoRenderer.java"
         ]
       },
       "path": "~/Dragons"
@@ -43,8 +43,8 @@
         "files": [
           "src/main/resources/assets/dragon_of_berk/models/item/liquidgronkeliron.json",
           "src/main/resources/assets/dragon_of_berk/models/block/liquidgronkeliron.json",
-          "src/main/java/net/mcreator/dragon_of_berk/block/LiquidgronkelironBlock.java",
-          "src/main/resources/assets/dragon_of_berk/blockstates/liquidgronkeliron.json"
+          "src/main/resources/assets/dragon_of_berk/blockstates/liquidgronkeliron.json",
+          "src/main/java/net/mcreator/dragon_of_berk/block/LiquidgronkelironBlock.java"
         ]
       },
       "path": "~/Itens/Block"
@@ -146,16 +146,16 @@
       "name": "Gronkel",
       "type": "animatedentity",
       "sortid": 13,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "gronkel",
       "metadata": {
         "files": [
+          "src/main/resources/assets/dragon_of_berk/models/item/gronkel_spawn_egg.json",
           "src/main/java/net/mcreator/dragon_of_berk/entity/GronkelEntity.java",
           "src/main/java/net/mcreator/dragon_of_berk/client/renderer/GronkelRenderer.java",
           "src/main/java/net/mcreator/dragon_of_berk/entity/model/GronkelModel.java",
-          "src/main/resources/data/dragon_of_berk/forge/biome_modifier/gronkel_biome_modifier.json",
-          "src/main/resources/assets/dragon_of_berk/models/item/gronkel_spawn_egg.json"
+          "src/main/resources/data/dragon_of_berk/forge/biome_modifier/gronkel_biome_modifier.json"
         ]
       },
       "path": "~/Dragons"
@@ -184,8 +184,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/dragon_of_berk/block/FishblockBlock.java",
-          "src/main/resources/assets/dragon_of_berk/models/block/fishblock.json",
           "src/main/resources/assets/dragon_of_berk/models/item/fishblock.json",
+          "src/main/resources/assets/dragon_of_berk/models/block/fishblock.json",
           "src/main/resources/assets/dragon_of_berk/blockstates/fishblock.json"
         ]
       },
@@ -231,8 +231,8 @@
         "files": [
           "src/main/resources/assets/dragon_of_berk/models/block/gronkel_iron_block.json",
           "src/main/java/net/mcreator/dragon_of_berk/block/GronkelIronBlockBlock.java",
-          "src/main/resources/assets/dragon_of_berk/blockstates/gronkel_iron_block.json",
-          "src/main/resources/assets/dragon_of_berk/models/item/gronkel_iron_block.json"
+          "src/main/resources/assets/dragon_of_berk/models/item/gronkel_iron_block.json",
+          "src/main/resources/assets/dragon_of_berk/blockstates/gronkel_iron_block.json"
         ]
       },
       "path": "~/Itens/Block"
@@ -296,8 +296,8 @@
       "registry_name": "gronkel_iron",
       "metadata": {
         "files": [
-          "src/main/resources/assets/dragon_of_berk/models/item/gronkel_iron.json",
-          "src/main/java/net/mcreator/dragon_of_berk/item/GronkelIronItem.java"
+          "src/main/java/net/mcreator/dragon_of_berk/item/GronkelIronItem.java",
+          "src/main/resources/assets/dragon_of_berk/models/item/gronkel_iron.json"
         ]
       },
       "path": "~/Itens"
@@ -311,8 +311,8 @@
       "registry_name": "battleaxe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/dragon_of_berk/item/BattleaxeItem.java",
-          "src/main/resources/assets/dragon_of_berk/models/item/battleaxe.json"
+          "src/main/resources/assets/dragon_of_berk/models/item/battleaxe.json",
+          "src/main/java/net/mcreator/dragon_of_berk/item/BattleaxeItem.java"
         ]
       },
       "path": "~/Itens/Tools"
@@ -366,8 +366,8 @@
       "registry_name": "mace",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/dragon_of_berk/item/MaceItem.java",
-          "src/main/resources/assets/dragon_of_berk/models/item/mace.json"
+          "src/main/resources/assets/dragon_of_berk/models/item/mace.json",
+          "src/main/java/net/mcreator/dragon_of_berk/item/MaceItem.java"
         ]
       },
       "path": "~/Itens/Tools"
@@ -395,10 +395,10 @@
       "registry_name": "gronkelmagma",
       "metadata": {
         "files": [
-          "src/main/resources/assets/dragon_of_berk/blockstates/gronkelmagma.json",
-          "src/main/java/net/mcreator/dragon_of_berk/block/GronkelmagmaBlock.java",
+          "src/main/resources/assets/dragon_of_berk/models/block/gronkelmagma.json",
           "src/main/resources/assets/dragon_of_berk/models/item/gronkelmagma.json",
-          "src/main/resources/assets/dragon_of_berk/models/block/gronkelmagma.json"
+          "src/main/resources/assets/dragon_of_berk/blockstates/gronkelmagma.json",
+          "src/main/java/net/mcreator/dragon_of_berk/block/GronkelmagmaBlock.java"
         ]
       },
       "path": "~/Itens/Block"
@@ -437,10 +437,10 @@
       "registry_name": "hobgobblerseggs",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/dragon_of_berk/block/HobgobblerseggsBlock.java",
           "src/main/resources/assets/dragon_of_berk/models/item/hobgobblerseggs.json",
           "src/main/resources/assets/dragon_of_berk/blockstates/hobgobblerseggs.json",
-          "src/main/resources/assets/dragon_of_berk/models/block/hobgobblerseggs.json"
+          "src/main/resources/assets/dragon_of_berk/models/block/hobgobblerseggs.json",
+          "src/main/java/net/mcreator/dragon_of_berk/block/HobgobblerseggsBlock.java"
         ]
       },
       "path": "~/Itens/Block"
@@ -454,9 +454,9 @@
       "registry_name": "cracked_hobgobblerseggs",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/dragon_of_berk/block/CrackedHobgobblerseggsBlock.java",
           "src/main/resources/assets/dragon_of_berk/models/item/cracked_hobgobblerseggs.json",
           "src/main/resources/assets/dragon_of_berk/blockstates/cracked_hobgobblerseggs.json",
+          "src/main/java/net/mcreator/dragon_of_berk/block/CrackedHobgobblerseggsBlock.java",
           "src/main/resources/assets/dragon_of_berk/models/block/cracked_hobgobblerseggs.json"
         ]
       },
@@ -571,8 +571,8 @@
       "registry_name": "gronckle_pag",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/dragon_of_berk/network/GroncklePagButtonMessage.java",
           "src/main/java/net/mcreator/dragon_of_berk/world/inventory/GroncklePagMenu.java",
+          "src/main/java/net/mcreator/dragon_of_berk/network/GroncklePagButtonMessage.java",
           "src/main/java/net/mcreator/dragon_of_berk/client/gui/GroncklePagScreen.java"
         ]
       },
@@ -659,9 +659,9 @@
       "registry_name": "monstruous_nightmare_pag",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/dragon_of_berk/network/MonstruousNightmarePagButtonMessage.java",
           "src/main/java/net/mcreator/dragon_of_berk/world/inventory/MonstruousNightmarePagMenu.java",
-          "src/main/java/net/mcreator/dragon_of_berk/client/gui/MonstruousNightmarePagScreen.java"
+          "src/main/java/net/mcreator/dragon_of_berk/client/gui/MonstruousNightmarePagScreen.java",
+          "src/main/java/net/mcreator/dragon_of_berk/network/MonstruousNightmarePagButtonMessage.java"
         ]
       },
       "path": "~/bookofdragons"
@@ -676,8 +676,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/dragon_of_berk/client/gui/BoulderClassScreen.java",
-          "src/main/java/net/mcreator/dragon_of_berk/world/inventory/BoulderClassMenu.java",
-          "src/main/java/net/mcreator/dragon_of_berk/network/BoulderClassButtonMessage.java"
+          "src/main/java/net/mcreator/dragon_of_berk/network/BoulderClassButtonMessage.java",
+          "src/main/java/net/mcreator/dragon_of_berk/world/inventory/BoulderClassMenu.java"
         ]
       },
       "path": "~/bookofdragons"
@@ -692,8 +692,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/dragon_of_berk/network/WhisperingDeathPagButtonMessage.java",
-          "src/main/java/net/mcreator/dragon_of_berk/world/inventory/WhisperingDeathPagMenu.java",
-          "src/main/java/net/mcreator/dragon_of_berk/client/gui/WhisperingDeathPagScreen.java"
+          "src/main/java/net/mcreator/dragon_of_berk/client/gui/WhisperingDeathPagScreen.java",
+          "src/main/java/net/mcreator/dragon_of_berk/world/inventory/WhisperingDeathPagMenu.java"
         ]
       },
       "path": "~/bookofdragons"
@@ -743,9 +743,9 @@
       "registry_name": "pag_2",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/dragon_of_berk/client/gui/Pag2Screen.java",
+          "src/main/java/net/mcreator/dragon_of_berk/world/inventory/Pag2Menu.java",
           "src/main/java/net/mcreator/dragon_of_berk/network/Pag2ButtonMessage.java",
-          "src/main/java/net/mcreator/dragon_of_berk/world/inventory/Pag2Menu.java"
+          "src/main/java/net/mcreator/dragon_of_berk/client/gui/Pag2Screen.java"
         ]
       },
       "path": "~/bookofdragons"
@@ -759,9 +759,9 @@
       "registry_name": "stoker_class",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/dragon_of_berk/world/inventory/StokerClassMenu.java",
           "src/main/java/net/mcreator/dragon_of_berk/client/gui/StokerClassScreen.java",
-          "src/main/java/net/mcreator/dragon_of_berk/network/StokerClassButtonMessage.java"
+          "src/main/java/net/mcreator/dragon_of_berk/network/StokerClassButtonMessage.java",
+          "src/main/java/net/mcreator/dragon_of_berk/world/inventory/StokerClassMenu.java"
         ]
       },
       "path": "~/bookofdragons"
@@ -775,9 +775,9 @@
       "registry_name": "pag_1",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/dragon_of_berk/network/Pag1ButtonMessage.java",
           "src/main/java/net/mcreator/dragon_of_berk/world/inventory/Pag1Menu.java",
-          "src/main/java/net/mcreator/dragon_of_berk/client/gui/Pag1Screen.java",
-          "src/main/java/net/mcreator/dragon_of_berk/network/Pag1ButtonMessage.java"
+          "src/main/java/net/mcreator/dragon_of_berk/client/gui/Pag1Screen.java"
         ]
       },
       "path": "~/bookofdragons"
@@ -791,8 +791,8 @@
       "registry_name": "terrible_terror_pag",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/dragon_of_berk/world/inventory/TerribleTerrorPagMenu.java",
           "src/main/java/net/mcreator/dragon_of_berk/network/TerribleTerrorPagButtonMessage.java",
+          "src/main/java/net/mcreator/dragon_of_berk/world/inventory/TerribleTerrorPagMenu.java",
           "src/main/java/net/mcreator/dragon_of_berk/client/gui/TerribleTerrorPagScreen.java"
         ]
       },
@@ -879,11 +879,11 @@
       "registry_name": "night_fury_scale_armor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/dragon_of_berk/models/item/night_fury_scale_armor_leggings.json",
           "src/main/resources/assets/dragon_of_berk/models/item/night_fury_scale_armor_boots.json",
-          "src/main/resources/assets/dragon_of_berk/models/item/night_fury_scale_armor_chestplate.json",
           "src/main/resources/assets/dragon_of_berk/models/item/night_fury_scale_armor_helmet.json",
-          "src/main/java/net/mcreator/dragon_of_berk/item/NightFuryScaleArmorItem.java"
+          "src/main/resources/assets/dragon_of_berk/models/item/night_fury_scale_armor_chestplate.json",
+          "src/main/java/net/mcreator/dragon_of_berk/item/NightFuryScaleArmorItem.java",
+          "src/main/resources/assets/dragon_of_berk/models/item/night_fury_scale_armor_leggings.json"
         ]
       },
       "path": "~/Armor"
@@ -897,8 +897,8 @@
       "registry_name": "dev",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/dragon_of_berk/item/DevItem.java",
-          "src/main/resources/assets/dragon_of_berk/models/item/dev.json"
+          "src/main/resources/assets/dragon_of_berk/models/item/dev.json",
+          "src/main/java/net/mcreator/dragon_of_berk/item/DevItem.java"
         ]
       }
     },
@@ -923,9 +923,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/dragon_of_berk/models/item/block_m_dev.json",
+          "src/main/resources/assets/dragon_of_berk/models/block/block_m_dev.json",
           "src/main/resources/assets/dragon_of_berk/blockstates/block_m_dev.json",
-          "src/main/java/net/mcreator/dragon_of_berk/block/BlockMDevBlock.java",
-          "src/main/resources/assets/dragon_of_berk/models/block/block_m_dev.json"
+          "src/main/java/net/mcreator/dragon_of_berk/block/BlockMDevBlock.java"
         ]
       },
       "path": "~/DEV Project"
@@ -1004,16 +1004,16 @@
       "name": "BookOfDragonsA",
       "type": "animateditem",
       "sortid": 64,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "book_of_dragons_a",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/dragon_of_berk/item/renderer/BookOfDragonsAItemRenderer.java",
-          "src/main/java/net/mcreator/dragon_of_berk/item/inventory/BookOfDragonsAInventoryCapability.java",
-          "src/main/java/net/mcreator/dragon_of_berk/item/model/BookOfDragonsAItemModel.java",
           "src/main/java/net/mcreator/dragon_of_berk/item/BookOfDragonsAItem.java",
-          "src/main/resources/assets/dragon_of_berk/models/item/book_of_dragons_a.json"
+          "src/main/resources/assets/dragon_of_berk/models/item/book_of_dragons_a.json",
+          "src/main/java/net/mcreator/dragon_of_berk/item/inventory/BookOfDragonsAInventoryCapability.java",
+          "src/main/java/net/mcreator/dragon_of_berk/item/model/BookOfDragonsAItemModel.java"
         ]
       },
       "path": "~/Itens"
@@ -1142,15 +1142,15 @@
       "name": "BooKofDragons",
       "type": "animateditem",
       "sortid": 76,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "boo_kof_dragons",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/dragon_of_berk/item/BooKofDragonsItem.java",
           "src/main/java/net/mcreator/dragon_of_berk/item/model/BooKofDragonsItemModel.java",
-          "src/main/resources/assets/dragon_of_berk/models/item/boo_kof_dragons.json",
-          "src/main/java/net/mcreator/dragon_of_berk/item/renderer/BooKofDragonsItemRenderer.java"
+          "src/main/java/net/mcreator/dragon_of_berk/item/BooKofDragonsItem.java",
+          "src/main/java/net/mcreator/dragon_of_berk/item/renderer/BooKofDragonsItemRenderer.java",
+          "src/main/resources/assets/dragon_of_berk/models/item/boo_kof_dragons.json"
         ]
       },
       "path": "~/Itens"
@@ -1355,6 +1355,10 @@
       {
         "name": "DEV Project",
         "children": []
+      },
+      {
+        "name": "devDG",
+        "children": []
       }
     ]
   },
@@ -1371,9 +1375,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
-      "curios_api",
-      "geckolib",
-      "playeranimator"
+      "geckolib"
     ],
     "currentGenerator": "forge-1.19.4",
     "credits": "https://discord.gg/KamrrKsM",

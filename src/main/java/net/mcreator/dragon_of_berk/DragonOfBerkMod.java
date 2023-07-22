@@ -13,6 +13,8 @@
  */
 package net.mcreator.dragon_of_berk;
 
+import software.bernie.geckolib.GeckoLib;
+
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
